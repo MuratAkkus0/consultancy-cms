@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_courses_statuses",
+  "info": {
+    "displayName": "Pages / Courses / Statuses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "active": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    }
+  }
+}

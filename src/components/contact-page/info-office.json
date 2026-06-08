@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_page_info_office",
+  "info": {
+    "displayName": "Info / Office",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "addressLine1": {
+      "type": "string"
+    },
+    "addressLine2": {
+      "type": "string"
+    }
+  }
+}

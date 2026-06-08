@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_online_courses_details_german",
+  "info": {
+    "displayName": "Online Courses / Details / German",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "iconClass": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "levels": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.online-courses-details-german-levels"
+    }
+  }
+}

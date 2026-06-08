@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_dashboard_page_pages_appointments",
+  "info": {
+    "displayName": "Pages / Appointments",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "filters": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-filters"
+    }
+  }
+}

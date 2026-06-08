@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_metadata_success_stories",
+  "info": {
+    "displayName": "Success Stories",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_applications_statuses",
+  "info": {
+    "displayName": "Pages / Applications / Statuses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "approved": {
+      "type": "string"
+    },
+    "interview": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    },
+    "rejected": {
+      "type": "string"
+    }
+  }
+}

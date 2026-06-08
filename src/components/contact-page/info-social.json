@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_contact_page_info_social",
+  "info": {
+    "displayName": "Info / Social",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

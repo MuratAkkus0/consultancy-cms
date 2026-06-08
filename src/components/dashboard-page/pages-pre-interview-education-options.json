@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_pre_interview_educa_2n1es6",
+  "info": {
+    "displayName": "Pages / Pre Interview / Education Options",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "lise_ogrencisi": {
+      "type": "string"
+    },
+    "lise_mezunu": {
+      "type": "string"
+    },
+    "universite_ogrencisi": {
+      "type": "string"
+    },
+    "universite_mezunu": {
+      "type": "string"
+    },
+    "yuksek_lisans": {
+      "type": "string"
+    }
+  }
+}

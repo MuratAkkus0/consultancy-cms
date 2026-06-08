@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_auth_page_login_validation",
+  "info": {
+    "displayName": "Login / Validation",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "emailRequired": {
+      "type": "string"
+    },
+    "emailInvalid": {
+      "type": "string"
+    },
+    "passwordRequired": {
+      "type": "string"
+    },
+    "passwordMin": {
+      "type": "string"
+    }
+  }
+}

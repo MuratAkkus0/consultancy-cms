@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_contact_page_info",
+  "info": {
+    "displayName": "Info",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "office": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.info-office"
+    },
+    "hours": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.info-hours"
+    },
+    "social": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.info-social"
+    }
+  }
+}

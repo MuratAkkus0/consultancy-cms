@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_comments_items",
+  "info": {
+    "displayName": "Comments / Items",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "stars": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}

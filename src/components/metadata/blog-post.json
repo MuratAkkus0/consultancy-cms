@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_metadata_blog_post",
+  "info": {
+    "displayName": "Blog Post",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

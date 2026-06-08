@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_page_stats",
+  "info": {
+    "displayName": "Stats",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    },
+    "suffix": {
+      "type": "string"
+    }
+  }
+}

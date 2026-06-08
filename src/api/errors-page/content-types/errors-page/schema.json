@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "errors_pages",
+  "info": {
+    "singularName": "errors-page",
+    "pluralName": "errors-pages",
+    "displayName": "errors-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "runtime": {
+      "type": "component",
+      "repeatable": false,
+      "component": "errors-page.runtime",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "notFound": {
+      "type": "component",
+      "repeatable": false,
+      "component": "errors-page.not-found",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

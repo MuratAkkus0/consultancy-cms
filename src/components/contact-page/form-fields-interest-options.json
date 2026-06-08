@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_page_form_fields_interest_options",
+  "info": {
+    "displayName": "Form / Fields / Interest / Options",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

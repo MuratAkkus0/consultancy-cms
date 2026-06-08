@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_contact_page_form",
+  "info": {
+    "displayName": "Form",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact-page.form-fields"
+    },
+    "submitBtn": {
+      "type": "string"
+    },
+    "submittingBtn": {
+      "type": "string"
+    }
+  }
+}

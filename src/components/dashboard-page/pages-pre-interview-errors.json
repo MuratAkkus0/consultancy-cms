@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_pre_interview_errors",
+  "info": {
+    "displayName": "Pages / Pre Interview / Errors",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "requiredFields": {
+      "type": "string"
+    },
+    "consentRequired": {
+      "type": "string"
+    },
+    "submitFailed": {
+      "type": "string"
+    }
+  }
+}

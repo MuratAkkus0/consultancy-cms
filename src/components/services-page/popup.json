@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_services_page_popup",
+  "info": {
+    "displayName": "Popup",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "infoBtn": {
+      "type": "string"
+    },
+    "infoRequestAlertPrefix": {
+      "type": "string"
+    },
+    "infoRequestAlertSuffix": {
+      "type": "string"
+    }
+  }
+}

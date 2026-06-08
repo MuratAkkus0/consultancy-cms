@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_pricing_page_standard",
+  "info": {
+    "displayName": "Standard",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "i18n-shared.value-item"
+    }
+  }
+}

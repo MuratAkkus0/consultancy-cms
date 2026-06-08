@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_auth_page_login",
+  "info": {
+    "displayName": "Login",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "emailLabel": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "passwordLabel": {
+      "type": "string"
+    },
+    "passwordPlaceholder": {
+      "type": "string"
+    },
+    "rememberMe": {
+      "type": "string"
+    },
+    "forgotPassword": {
+      "type": "string"
+    },
+    "submitButton": {
+      "type": "string"
+    },
+    "submittingButton": {
+      "type": "string"
+    },
+    "noAccount": {
+      "type": "string"
+    },
+    "registerLink": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "errorMessage": {
+      "type": "string"
+    },
+    "validation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "auth-page.login-validation"
+    }
+  }
+}

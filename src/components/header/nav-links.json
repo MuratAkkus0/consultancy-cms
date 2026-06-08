@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_header_nav_links",
+  "info": {
+    "displayName": "Nav Links",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_how_to_work",
+  "info": {
+    "displayName": "How To Work",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.how-to-work-steps"
+    }
+  }
+}

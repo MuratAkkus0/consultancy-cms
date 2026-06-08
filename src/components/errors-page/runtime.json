@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_errors_page_runtime",
+  "info": {
+    "displayName": "Runtime",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "retry": {
+      "type": "string"
+    }
+  }
+}

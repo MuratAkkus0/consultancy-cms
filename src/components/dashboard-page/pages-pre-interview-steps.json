@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_dashboard_page_pages_pre_interview_steps",
+  "info": {
+    "displayName": "Pages / Pre Interview / Steps",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "personal": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "passport": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "financeVisa": {
+      "type": "string"
+    },
+    "additional": {
+      "type": "string"
+    },
+    "review": {
+      "type": "string"
+    }
+  }
+}

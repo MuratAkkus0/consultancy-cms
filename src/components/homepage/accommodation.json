@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_homepage_accommodation",
+  "info": {
+    "displayName": "Accommodation",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "detailBtnLabel": {
+      "type": "string"
+    },
+    "popup": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.accommodation-popup"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.accommodation-items"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.accommodation-details"
+    }
+  }
+}

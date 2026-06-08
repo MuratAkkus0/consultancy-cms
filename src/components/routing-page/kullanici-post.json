@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_routing_page_kullanici_post",
+  "info": {
+    "displayName": "Kullanici Post",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "file": {
+      "type": "string"
+    },
+    "urlPrefix": {
+      "type": "string"
+    }
+  }
+}

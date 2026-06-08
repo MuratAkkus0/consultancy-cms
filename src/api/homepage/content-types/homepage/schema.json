@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "homepages",
   "info": {
     "singularName": "homepage",
     "pluralName": "homepages",
-    "displayName": "Homepage"
+    "displayName": "homepage"
   },
   "options": {
     "draftAndPublish": true
@@ -15,23 +15,75 @@
     }
   },
   "attributes": {
-    "heroText": {
-      "type": "string",
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.hero",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "required": true
+      }
     },
-    "ctaText": {
-      "type": "string",
+    "services": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.services",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "required": true
+      }
+    },
+    "onlineCourses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.online-courses",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "accommodation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.accommodation",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "statistics": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.statistics",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.comments",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "howToWork": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.how-to-work",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_contact_page_form_fields_interest",
+  "info": {
+    "displayName": "Form / Fields / Interest",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.form-fields-interest-options"
+    }
+  }
+}

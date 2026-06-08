@@ -1,0 +1,64 @@
+{
+  "collectionName": "components_blog_page_page",
+  "info": {
+    "displayName": "Page",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "loading": {
+      "type": "string"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    },
+    "searchBtn": {
+      "type": "string"
+    },
+    "noResults": {
+      "type": "string"
+    },
+    "readMore": {
+      "type": "string"
+    },
+    "popularTitle": {
+      "type": "string"
+    },
+    "tagsTitle": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "i18n-shared.value-item"
+    },
+    "newsletterTitle": {
+      "type": "string"
+    },
+    "newsletterDesc": {
+      "type": "string"
+    },
+    "newsletterPlaceholder": {
+      "type": "string"
+    },
+    "newsletterBtn": {
+      "type": "string"
+    },
+    "categoryLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-page.page-category-labels"
+    },
+    "detailAlertPrefix": {
+      "type": "string"
+    },
+    "detailAlertSuffix": {
+      "type": "string"
+    },
+    "posts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-page.page-posts"
+    }
+  }
+}

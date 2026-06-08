@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_hero_stats",
+  "info": {
+    "displayName": "Hero / Stats",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "target": {
+      "type": "decimal"
+    }
+  }
+}

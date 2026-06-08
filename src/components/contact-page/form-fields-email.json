@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_contact_page_form_fields_email",
+  "info": {
+    "displayName": "Form / Fields / Email",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "errorRequired": {
+      "type": "string"
+    },
+    "errorInvalid": {
+      "type": "string"
+    }
+  }
+}

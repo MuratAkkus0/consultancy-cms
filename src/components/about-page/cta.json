@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_page_cta",
+  "info": {
+    "displayName": "Cta",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_routing_page_route_group",
+  "info": {
+    "displayName": "Route Group",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "fileBody": {
+      "type": "string"
+    },
+    "urlBody": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

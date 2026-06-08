@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_dashboard_page_pages_pre_interview_targe_1oy5mne",
+  "info": {
+    "displayName": "Pages / Pre Interview / Target Education Options",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "dil_egitimi": {
+      "type": "string"
+    },
+    "lisans": {
+      "type": "string"
+    },
+    "yuksek_lisans": {
+      "type": "string"
+    },
+    "kolej_foundation": {
+      "type": "string"
+    },
+    "berufskolleg_ausbildung": {
+      "type": "string"
+    },
+    "sommer_winter_school": {
+      "type": "string"
+    }
+  }
+}

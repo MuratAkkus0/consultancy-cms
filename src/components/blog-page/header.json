@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_blog_page_header",
+  "info": {
+    "displayName": "Header",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "backLink": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-page.header-categories"
+    }
+  }
+}

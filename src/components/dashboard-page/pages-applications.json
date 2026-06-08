@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_dashboard_page_pages_applications",
+  "info": {
+    "displayName": "Pages / Applications",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "filters": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-applications-filters"
+    },
+    "statuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-applications-statuses"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-applications-card"
+    },
+    "empty": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-applications-empty"
+    }
+  }
+}

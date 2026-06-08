@@ -1,0 +1,79 @@
+{
+  "kind": "singleType",
+  "collectionName": "routing_pages",
+  "info": {
+    "singularName": "routing-page",
+    "pluralName": "routing-pages",
+    "displayName": "routing-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "common": {
+      "type": "component",
+      "repeatable": false,
+      "component": "routing-page.common",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "routeGroup": {
+      "type": "component",
+      "repeatable": false,
+      "component": "routing-page.route-group",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "magaza": {
+      "type": "component",
+      "repeatable": false,
+      "component": "routing-page.magaza",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "kullaniciId": {
+      "type": "component",
+      "repeatable": false,
+      "component": "routing-page.kullanici-id",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "kullaniciPost": {
+      "type": "component",
+      "repeatable": false,
+      "component": "routing-page.kullanici-post",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "dokumanlar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "routing-page.dokumanlar",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

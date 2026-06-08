@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_pre_interview_fundi_1ec87xn",
+  "info": {
+    "displayName": "Pages / Pre Interview / Funding Options",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "aile_destegi": {
+      "type": "string"
+    },
+    "kredi": {
+      "type": "string"
+    },
+    "burs": {
+      "type": "string"
+    },
+    "sponsorluk": {
+      "type": "string"
+    }
+  }
+}

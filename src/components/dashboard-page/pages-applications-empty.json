@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dashboard_page_pages_applications_empty",
+  "info": {
+    "displayName": "Pages / Applications / Empty",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "noApplications": {
+      "type": "string"
+    }
+  }
+}

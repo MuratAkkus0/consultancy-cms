@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_payments_filters",
+  "info": {
+    "displayName": "Pages / Payments / Filters",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "all": {
+      "type": "string"
+    },
+    "paid": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    },
+    "failed": {
+      "type": "string"
+    },
+    "refunded": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_dashboard_page_pages_messages",
+  "info": {
+    "displayName": "Pages / Messages",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "inbox": {
+      "type": "string"
+    },
+    "new": {
+      "type": "string"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    },
+    "noChats": {
+      "type": "string"
+    },
+    "advisor": {
+      "type": "string"
+    },
+    "online": {
+      "type": "string"
+    },
+    "offline": {
+      "type": "string"
+    },
+    "messagePlaceholder": {
+      "type": "string"
+    },
+    "noActiveChatTitle": {
+      "type": "string"
+    },
+    "noActiveChatDesc": {
+      "type": "string"
+    }
+  }
+}

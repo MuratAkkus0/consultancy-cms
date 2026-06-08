@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_page_values_items",
+  "info": {
+    "displayName": "Values / Items",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

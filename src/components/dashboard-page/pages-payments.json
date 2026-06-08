@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_dashboard_page_pages_payments",
+  "info": {
+    "displayName": "Pages / Payments",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "filters": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-payments-filters"
+    },
+    "statuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-payments-statuses"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-payments-card"
+    },
+    "empty": {
+      "type": "string"
+    }
+  }
+}

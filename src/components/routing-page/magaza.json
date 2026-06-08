@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_routing_page_magaza",
+  "info": {
+    "displayName": "Magaza",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "file": {
+      "type": "string"
+    },
+    "paramsLabel": {
+      "type": "string"
+    },
+    "categoryPathPrefix": {
+      "type": "string"
+    },
+    "homeFallback": {
+      "type": "string"
+    }
+  }
+}

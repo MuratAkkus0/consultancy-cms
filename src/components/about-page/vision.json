@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_page_vision",
+  "info": {
+    "displayName": "Vision",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

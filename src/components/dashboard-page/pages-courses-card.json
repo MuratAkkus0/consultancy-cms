@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_dashboard_page_pages_courses_card",
+  "info": {
+    "displayName": "Pages / Courses / Card",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "progress": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    },
+    "instructor": {
+      "type": "string"
+    },
+    "certificate": {
+      "type": "string"
+    },
+    "active": {
+      "type": "string"
+    },
+    "completedCount": {
+      "type": "string"
+    }
+  }
+}

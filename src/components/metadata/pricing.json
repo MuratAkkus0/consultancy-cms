@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_metadata_pricing",
+  "info": {
+    "displayName": "Pricing",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

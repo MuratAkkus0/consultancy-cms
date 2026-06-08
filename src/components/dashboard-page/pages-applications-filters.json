@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_applications_filters",
+  "info": {
+    "displayName": "Pages / Applications / Filters",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "all": {
+      "type": "string"
+    },
+    "approved": {
+      "type": "string"
+    },
+    "interview": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    },
+    "rejected": {
+      "type": "string"
+    }
+  }
+}

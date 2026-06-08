@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_dashboard_page_sidebar",
+  "info": {
+    "displayName": "Sidebar",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "dashboard": {
+      "type": "string"
+    },
+    "basvurularim": {
+      "type": "string"
+    },
+    "belgelerim": {
+      "type": "string"
+    },
+    "randevularim": {
+      "type": "string"
+    },
+    "mesajlarim": {
+      "type": "string"
+    },
+    "odemelerim": {
+      "type": "string"
+    },
+    "kurslarim": {
+      "type": "string"
+    },
+    "profilim": {
+      "type": "string"
+    }
+  }
+}

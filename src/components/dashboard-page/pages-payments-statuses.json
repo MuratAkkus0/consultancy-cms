@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_payments_statuses",
+  "info": {
+    "displayName": "Pages / Payments / Statuses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "paid": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    },
+    "failed": {
+      "type": "string"
+    },
+    "refunded": {
+      "type": "string"
+    }
+  }
+}

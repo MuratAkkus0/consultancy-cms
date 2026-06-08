@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_metadata_about",
+  "info": {
+    "displayName": "About",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

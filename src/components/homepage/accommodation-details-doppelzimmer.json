@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_accommodation_details_doppelzimmer",
+  "info": {
+    "displayName": "Accommodation / Details / Doppelzimmer",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "iconClass": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "i18n-shared.value-item"
+    }
+  }
+}

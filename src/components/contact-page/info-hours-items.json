@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_page_info_hours_items",
+  "info": {
+    "displayName": "Info / Hours / Items",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

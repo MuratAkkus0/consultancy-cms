@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_metadata_contact",
+  "info": {
+    "displayName": "Contact",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

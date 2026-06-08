@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_services_page_details",
+  "info": {
+    "displayName": "Details",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "bachelor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services-page.details-bachelor"
+    },
+    "master": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services-page.details-master"
+    },
+    "promotion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services-page.details-promotion"
+    },
+    "ausbildung": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services-page.details-ausbildung"
+    },
+    "arbeit": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services-page.details-arbeit"
+    }
+  }
+}

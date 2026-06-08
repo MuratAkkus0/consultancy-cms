@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "auth_pages",
+  "info": {
+    "singularName": "auth-page",
+    "pluralName": "auth-pages",
+    "displayName": "auth-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "login": {
+      "type": "component",
+      "repeatable": false,
+      "component": "auth-page.login",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "register": {
+      "type": "component",
+      "repeatable": false,
+      "component": "auth-page.register",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "forgotPassword": {
+      "type": "component",
+      "repeatable": false,
+      "component": "auth-page.forgot-password",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resetPassword": {
+      "type": "component",
+      "repeatable": false,
+      "component": "auth-page.reset-password",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

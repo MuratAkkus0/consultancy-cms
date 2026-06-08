@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_pricing_page_basic",
+  "info": {
+    "displayName": "Basic",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "i18n-shared.value-item"
+    }
+  }
+}

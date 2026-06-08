@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_auth_page_register_validation",
+  "info": {
+    "displayName": "Register / Validation",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "nameRequired": {
+      "type": "string"
+    },
+    "nameMin": {
+      "type": "string"
+    },
+    "emailRequired": {
+      "type": "string"
+    },
+    "emailInvalid": {
+      "type": "string"
+    },
+    "passwordRequired": {
+      "type": "string"
+    },
+    "passwordMin": {
+      "type": "string"
+    },
+    "confirmPasswordRequired": {
+      "type": "string"
+    },
+    "passwordsDoNotMatch": {
+      "type": "string"
+    },
+    "termsRequired": {
+      "type": "string"
+    }
+  }
+}

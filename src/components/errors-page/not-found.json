@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_errors_page_not_found",
+  "info": {
+    "displayName": "Not Found",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "homeLink": {
+      "type": "string"
+    }
+  }
+}

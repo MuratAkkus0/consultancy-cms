@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_page_mission",
+  "info": {
+    "displayName": "Mission",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

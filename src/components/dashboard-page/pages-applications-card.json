@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_applications_card",
+  "info": {
+    "displayName": "Pages / Applications / Card",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "applicationDate": {
+      "type": "string"
+    },
+    "process": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "upcomingInterview": {
+      "type": "string"
+    }
+  }
+}

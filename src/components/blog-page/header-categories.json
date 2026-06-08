@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_page_header_categories",
+  "info": {
+    "displayName": "Header / Categories",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "itemId": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

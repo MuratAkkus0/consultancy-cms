@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_payments_card",
+  "info": {
+    "displayName": "Pages / Payments / Card",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "invoice": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "totalPaid": {
+      "type": "string"
+    },
+    "pendingAmount": {
+      "type": "string"
+    }
+  }
+}

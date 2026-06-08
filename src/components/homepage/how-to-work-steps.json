@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_how_to_work_steps",
+  "info": {
+    "displayName": "How To Work / Steps",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

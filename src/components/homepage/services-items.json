@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_services_items",
+  "info": {
+    "displayName": "Services / Items",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

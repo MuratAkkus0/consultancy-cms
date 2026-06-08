@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_success_stories_page_stories",
+  "info": {
+    "displayName": "Stories",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "university": {
+      "type": "string"
+    },
+    "program": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "badge": {
+      "type": "string"
+    }
+  }
+}

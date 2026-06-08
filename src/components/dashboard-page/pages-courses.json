@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_dashboard_page_pages_courses",
+  "info": {
+    "displayName": "Pages / Courses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "statuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-courses-statuses"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-courses-card"
+    },
+    "empty": {
+      "type": "string"
+    }
+  }
+}

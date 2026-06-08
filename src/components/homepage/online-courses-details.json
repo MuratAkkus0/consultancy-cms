@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_homepage_online_courses_details",
+  "info": {
+    "displayName": "Online Courses / Details",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "english": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.online-courses-details-english"
+    },
+    "german": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.online-courses-details-german"
+    }
+  }
+}

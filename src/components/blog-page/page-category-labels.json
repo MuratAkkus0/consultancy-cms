@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_page_page_category_labels",
+  "info": {
+    "displayName": "Page / Category Labels",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "egitim": {
+      "type": "string"
+    },
+    "vize": {
+      "type": "string"
+    },
+    "burs": {
+      "type": "string"
+    },
+    "dil": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "collectionName": "components_auth_page_register",
+  "info": {
+    "displayName": "Register",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "nameLabel": {
+      "type": "string"
+    },
+    "namePlaceholder": {
+      "type": "string"
+    },
+    "emailLabel": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "passwordLabel": {
+      "type": "string"
+    },
+    "passwordPlaceholder": {
+      "type": "string"
+    },
+    "confirmPasswordLabel": {
+      "type": "string"
+    },
+    "confirmPasswordPlaceholder": {
+      "type": "string"
+    },
+    "termsText": {
+      "type": "string"
+    },
+    "submitButton": {
+      "type": "string"
+    },
+    "submittingButton": {
+      "type": "string"
+    },
+    "hasAccount": {
+      "type": "string"
+    },
+    "loginLink": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "errorMessage": {
+      "type": "string"
+    },
+    "validation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "auth-page.register-validation"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_homepage_comments",
+  "info": {
+    "displayName": "Comments",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.comments-items"
+    }
+  }
+}

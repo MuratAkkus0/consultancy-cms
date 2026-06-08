@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_homepage_services",
+  "info": {
+    "displayName": "Services",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "detailLinkLabel": {
+      "type": "string"
+    },
+    "viewAllLabel": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.services-items"
+    }
+  }
+}

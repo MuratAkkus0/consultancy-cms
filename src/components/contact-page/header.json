@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_page_header",
+  "info": {
+    "displayName": "Header",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_page_form_fields_message",
+  "info": {
+    "displayName": "Form / Fields / Message",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    }
+  }
+}

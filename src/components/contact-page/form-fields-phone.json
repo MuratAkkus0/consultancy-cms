@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_page_form_fields_phone",
+  "info": {
+    "displayName": "Form / Fields / Phone",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

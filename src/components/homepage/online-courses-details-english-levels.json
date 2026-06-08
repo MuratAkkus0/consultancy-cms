@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_online_courses_details_english_levels",
+  "info": {
+    "displayName": "Online Courses / Details / English / Levels",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_homepage_accommodation_details",
+  "info": {
+    "displayName": "Accommodation / Details",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "einzelzimmer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.accommodation-details-einzelzimmer"
+    },
+    "doppelzimmer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.accommodation-details-doppelzimmer"
+    },
+    "wg": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.accommodation-details-wg"
+    },
+    "wohnheim": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.accommodation-details-wohnheim"
+    }
+  }
+}

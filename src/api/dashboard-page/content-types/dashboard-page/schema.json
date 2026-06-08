@@ -1,0 +1,81 @@
+{
+  "kind": "singleType",
+  "collectionName": "dashboard_pages",
+  "info": {
+    "singularName": "dashboard-page",
+    "pluralName": "dashboard-pages",
+    "displayName": "dashboard-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "welcome": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sidebar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.sidebar",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "routes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.routes",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "pages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "quickTip": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "quickTipText": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

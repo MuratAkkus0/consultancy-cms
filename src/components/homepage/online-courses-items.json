@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_homepage_online_courses_items",
+  "info": {
+    "displayName": "Online Courses / Items",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "itemId": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

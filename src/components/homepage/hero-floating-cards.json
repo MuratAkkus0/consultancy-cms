@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_hero_floating_cards",
+  "info": {
+    "displayName": "Hero / Floating Cards",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    }
+  }
+}

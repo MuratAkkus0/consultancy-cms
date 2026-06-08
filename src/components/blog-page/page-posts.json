@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blog_page_page_posts",
+  "info": {
+    "displayName": "Page / Posts",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "itemId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

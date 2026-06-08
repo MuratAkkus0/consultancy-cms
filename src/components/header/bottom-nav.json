@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_header_bottom_nav",
+  "info": {
+    "displayName": "Bottom Nav",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "home": {
+      "type": "string"
+    },
+    "explore": {
+      "type": "string"
+    },
+    "appointment": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "pricing": {
+      "type": "string"
+    }
+  }
+}

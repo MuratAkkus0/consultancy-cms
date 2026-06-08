@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_documents_categories",
+  "info": {
+    "displayName": "Pages / Documents / Categories",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "all": {
+      "type": "string"
+    },
+    "identity": {
+      "type": "string"
+    },
+    "academic": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "other": {
+      "type": "string"
+    }
+  }
+}

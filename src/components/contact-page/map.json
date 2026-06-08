@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_contact_page_map",
+  "info": {
+    "displayName": "Map",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_homepage_statistics",
+  "info": {
+    "displayName": "Statistics",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.statistics-items"
+    }
+  }
+}

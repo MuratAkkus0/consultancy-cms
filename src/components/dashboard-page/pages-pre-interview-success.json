@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dashboard_page_pages_pre_interview_success",
+  "info": {
+    "displayName": "Pages / Pre Interview / Success",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

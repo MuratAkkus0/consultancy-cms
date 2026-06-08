@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_homepage_hero",
+  "info": {
+    "displayName": "Hero",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "titleStart": {
+      "type": "string"
+    },
+    "titleHighlight": {
+      "type": "string"
+    },
+    "titleEnd": {
+      "type": "string"
+    },
+    "descriptionStart": {
+      "type": "string"
+    },
+    "descriptionEmphasis": {
+      "type": "string"
+    },
+    "descriptionEnd": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.hero-stats"
+    },
+    "ctaPrimary": {
+      "type": "string"
+    },
+    "ctaSecondary": {
+      "type": "string"
+    },
+    "trustBadges": {
+      "type": "component",
+      "repeatable": true,
+      "component": "i18n-shared.value-item"
+    },
+    "floatingCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.hero-floating-cards"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "scrollLabel": {
+      "type": "string"
+    }
+  }
+}

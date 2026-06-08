@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_online_courses_popup",
+  "info": {
+    "displayName": "Online Courses / Popup",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "infoBtn": {
+      "type": "string"
+    },
+    "infoPrefix": {
+      "type": "string"
+    },
+    "infoSuffix": {
+      "type": "string"
+    }
+  }
+}

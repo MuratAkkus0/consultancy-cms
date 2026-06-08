@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_page_form_fields_fullname",
+  "info": {
+    "displayName": "Form / Fields / Fullname",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    }
+  }
+}

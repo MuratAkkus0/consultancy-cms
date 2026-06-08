@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_dashboard_page_pages_documents",
+  "info": {
+    "displayName": "Pages / Documents",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-documents-categories"
+    }
+  }
+}

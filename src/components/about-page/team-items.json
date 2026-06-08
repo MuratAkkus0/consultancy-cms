@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_page_team_items",
+  "info": {
+    "displayName": "Team / Items",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

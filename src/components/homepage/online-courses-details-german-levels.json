@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_online_courses_details_german_levels",
+  "info": {
+    "displayName": "Online Courses / Details / German / Levels",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

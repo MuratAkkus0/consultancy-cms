@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "success_stories_pages",
+  "info": {
+    "singularName": "success-stories-page",
+    "pluralName": "success-stories-pages",
+    "displayName": "success-stories-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "success-stories-page.header",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "success-stories-page.stats",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "stories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "success-stories-page.stories",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "success-stories-page.cta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

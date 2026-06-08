@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_success_stories_page_stats",
+  "info": {
+    "displayName": "Stats",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    }
+  }
+}

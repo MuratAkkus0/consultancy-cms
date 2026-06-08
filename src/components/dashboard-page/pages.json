@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_dashboard_page_pages",
+  "info": {
+    "displayName": "Pages",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "applications": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-applications"
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-documents"
+    },
+    "appointments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments"
+    },
+    "messages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-messages"
+    },
+    "payments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-payments"
+    },
+    "courses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-courses"
+    },
+    "profile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-profile"
+    },
+    "preInterview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-pre-interview"
+    }
+  }
+}

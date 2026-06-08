@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_routing_page_kullanici_id",
+  "info": {
+    "displayName": "Kullanici Id",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "file": {
+      "type": "string"
+    },
+    "urlPrefix": {
+      "type": "string"
+    },
+    "paramsLabel": {
+      "type": "string"
+    }
+  }
+}

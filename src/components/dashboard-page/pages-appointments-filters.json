@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_appointments_filters",
+  "info": {
+    "displayName": "Pages / Appointments / Filters",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "all": {
+      "type": "string"
+    },
+    "upcoming": {
+      "type": "string"
+    },
+    "past": {
+      "type": "string"
+    },
+    "cancelled": {
+      "type": "string"
+    }
+  }
+}

@@ -75,6 +75,16 @@
         }
       }
     },
+    "destinations": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.destinations",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "howToWork": {
       "type": "component",
       "repeatable": false,

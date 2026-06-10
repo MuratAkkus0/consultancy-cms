@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_overview",
+  "info": {
+    "displayName": "Pages / Admin Overview",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "greeting": {
+      "type": "string"
+    }
+  }
+}

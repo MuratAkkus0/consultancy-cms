@@ -16,6 +16,21 @@
       "type": "component",
       "repeatable": false,
       "component": "dashboard-page.pages-documents-categories"
+    },
+    "progressTitle": {
+      "type": "string"
+    },
+    "emptyList": {
+      "type": "string"
+    },
+    "emptyDesc": {
+      "type": "string"
+    },
+    "assignTitle": {
+      "type": "string"
+    },
+    "searchPlaceholder": {
+      "type": "string"
     }
   }
 }

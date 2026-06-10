@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_assignments",
+  "info": {
+    "displayName": "Pages / Admin Assignments",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "allAssigned": {
+      "type": "string"
+    },
+    "table": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-assignments-table"
+    },
+    "assign": {
+      "type": "string"
+    },
+    "confirmTitle": {
+      "type": "string"
+    },
+    "confirmMessage": {
+      "type": "string"
+    }
+  }
+}

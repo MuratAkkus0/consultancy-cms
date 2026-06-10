@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_deta_3yt4ab",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Tabs",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "general": {
+      "type": "string"
+    },
+    "applications": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "string"
+    },
+    "appointments": {
+      "type": "string"
+    },
+    "payments": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

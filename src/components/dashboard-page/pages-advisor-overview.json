@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_overview",
+  "info": {
+    "displayName": "Pages / Advisor Overview",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "greeting": {
+      "type": "string"
+    },
+    "recentStudents": {
+      "type": "string"
+    },
+    "viewAll": {
+      "type": "string"
+    }
+  }
+}

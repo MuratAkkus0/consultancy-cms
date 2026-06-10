@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_students",
+  "info": {
+    "displayName": "Pages / Advisor Students",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    },
+    "filterAll": {
+      "type": "string"
+    },
+    "noStudents": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "educationType": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

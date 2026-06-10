@@ -45,6 +45,56 @@
       "type": "component",
       "repeatable": false,
       "component": "dashboard-page.pages-pre-interview"
+    },
+    "adminOverview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-overview"
+    },
+    "advisorOverview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-overview"
+    },
+    "advisorMessages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-messages"
+    },
+    "advisorStudents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-students"
+    },
+    "advisorAppointments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-appointments"
+    },
+    "adminAssignments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-assignments"
+    },
+    "adminAdvisors": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-advisors"
+    },
+    "adminStudents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-students"
+    },
+    "advisorStudentDetail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail"
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-overview"
     }
   }
 }

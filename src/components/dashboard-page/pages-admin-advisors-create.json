@@ -1,0 +1,73 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_advisors_create",
+  "info": {
+    "displayName": "Pages / Admin Advisors / Create",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "firstNamePlaceholder": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "lastNamePlaceholder": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "passwordPlaceholder": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "titlePlaceholder": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "phonePlaceholder": {
+      "type": "string"
+    },
+    "specialties": {
+      "type": "string"
+    },
+    "specialtiesPlaceholder": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "bioPlaceholder": {
+      "type": "string"
+    },
+    "cancel": {
+      "type": "string"
+    },
+    "submitting": {
+      "type": "string"
+    },
+    "submit": {
+      "type": "string"
+    }
+  }
+}

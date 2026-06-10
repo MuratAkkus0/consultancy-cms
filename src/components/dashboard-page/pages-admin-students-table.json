@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_students_table",
+  "info": {
+    "displayName": "Pages / Admin Students / Table",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "advisor": {
+      "type": "string"
+    },
+    "actions": {
+      "type": "string"
+    }
+  }
+}

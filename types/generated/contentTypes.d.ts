@@ -1203,6 +1203,12 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    destinations: Schema.Attribute.Component<'homepage.destinations', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     hero: Schema.Attribute.Component<'homepage.hero', false> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

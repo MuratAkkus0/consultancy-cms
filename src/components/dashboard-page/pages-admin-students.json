@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_students",
+  "info": {
+    "displayName": "Pages / Admin Students",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "deleted": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    },
+    "table": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-students-table"
+    },
+    "save": {
+      "type": "string"
+    },
+    "delete": {
+      "type": "string"
+    },
+    "confirmAssignTitle": {
+      "type": "string"
+    },
+    "confirmUnassignTitle": {
+      "type": "string"
+    },
+    "confirmDeleteTitle": {
+      "type": "string"
+    },
+    "confirmAssignMessage": {
+      "type": "string"
+    },
+    "confirmUnassignMessage": {
+      "type": "string"
+    },
+    "confirmDeleteMessage": {
+      "type": "string"
+    }
+  }
+}

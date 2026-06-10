@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_overview_advisor",
+  "info": {
+    "displayName": "Pages / Overview / Advisor",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "notAssignedTitle": {
+      "type": "string"
+    },
+    "notAssignedDesc": {
+      "type": "string"
+    },
+    "assignedDate": {
+      "type": "string"
+    },
+    "sendMessage": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_advisors",
+  "info": {
+    "displayName": "Pages / Admin Advisors",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "confirmUnassignTitle": {
+      "type": "string"
+    },
+    "confirmUnassignMessage": {
+      "type": "string"
+    },
+    "createAdvisor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-advisors-create"
+    }
+  }
+}

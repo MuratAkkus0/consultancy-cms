@@ -1,0 +1,88 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_fields",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Fields",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "educationStatus": {
+      "type": "string"
+    },
+    "school": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "graduationYear": {
+      "type": "string"
+    },
+    "gpa": {
+      "type": "string"
+    },
+    "englishLevel": {
+      "type": "string"
+    },
+    "germanLevel": {
+      "type": "string"
+    },
+    "certificates": {
+      "type": "string"
+    },
+    "targetCountry": {
+      "type": "string"
+    },
+    "targetEducationType": {
+      "type": "string"
+    },
+    "targetField": {
+      "type": "string"
+    },
+    "targetStartDate": {
+      "type": "string"
+    },
+    "fundingSource": {
+      "type": "string"
+    },
+    "monthlyBudget": {
+      "type": "string"
+    },
+    "hasGreenPassport": {
+      "type": "string"
+    },
+    "passportValidity": {
+      "type": "string"
+    },
+    "schengenEntry": {
+      "type": "string"
+    },
+    "previousVisaApp": {
+      "type": "string"
+    },
+    "visaRejection": {
+      "type": "string"
+    },
+    "expectations": {
+      "type": "string"
+    }
+  }
+}

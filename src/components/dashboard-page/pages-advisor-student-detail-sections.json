@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_deta_4jn5cd",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Sections",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "personalInfo": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "financeVisa": {
+      "type": "string"
+    }
+  }
+}

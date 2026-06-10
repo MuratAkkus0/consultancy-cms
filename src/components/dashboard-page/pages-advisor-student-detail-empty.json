@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_deta_2qn2tv",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Empty",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "applications": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "string"
+    },
+    "appointments": {
+      "type": "string"
+    },
+    "payments": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

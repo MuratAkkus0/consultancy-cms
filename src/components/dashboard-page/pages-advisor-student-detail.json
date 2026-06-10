@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "notFound": {
+      "type": "string"
+    },
+    "empty": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-empty"
+    },
+    "upcomingInterview": {
+      "type": "string"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-tabs"
+    },
+    "documentName": {
+      "type": "string"
+    },
+    "documentCategory": {
+      "type": "string"
+    },
+    "documentDate": {
+      "type": "string"
+    },
+    "documentStatus": {
+      "type": "string"
+    },
+    "paymentDescription": {
+      "type": "string"
+    },
+    "paymentAmount": {
+      "type": "string"
+    },
+    "paymentDate": {
+      "type": "string"
+    },
+    "paymentStatus": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-sections"
+    },
+    "fields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-fields"
+    }
+  }
+}

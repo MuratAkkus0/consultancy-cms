@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_appointments",
+  "info": {
+    "displayName": "Pages / Advisor Appointments",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "filterAll": {
+      "type": "string"
+    },
+    "noAppointments": {
+      "type": "string"
+    },
+    "withStudent": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_messages",
+  "info": {
+    "displayName": "Pages / Advisor Messages",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "inbox": {
+      "type": "string"
+    },
+    "new": {
+      "type": "string"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    },
+    "noChats": {
+      "type": "string"
+    },
+    "online": {
+      "type": "string"
+    },
+    "offline": {
+      "type": "string"
+    },
+    "messagePlaceholder": {
+      "type": "string"
+    },
+    "noActiveChatTitle": {
+      "type": "string"
+    },
+    "noActiveChatDesc": {
+      "type": "string"
+    }
+  }
+}

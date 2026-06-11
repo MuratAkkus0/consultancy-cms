@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "veysel_bayars",
+  "info": {
+    "singularName": "veysel-bayar",
+    "pluralName": "veysel-bayars",
+    "displayName": "Veysel Bayar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1663,6 +1663,34 @@ export interface ApiSuccessStoriesPageSuccessStoriesPage
   };
 }
 
+export interface ApiVeyselBayarVeyselBayar extends Struct.SingleTypeSchema {
+  collectionName: 'veysel_bayars';
+  info: {
+    displayName: 'Veysel Bayar';
+    pluralName: 'veysel-bayars';
+    singularName: 'veysel-bayar';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::veysel-bayar.veysel-bayar'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -2195,6 +2223,7 @@ declare module '@strapi/strapi' {
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'api::subscription.subscription': ApiSubscriptionSubscription;
       'api::success-stories-page.success-stories-page': ApiSuccessStoriesPageSuccessStoriesPage;
+      'api::veysel-bayar.veysel-bayar': ApiVeyselBayarVeyselBayar;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

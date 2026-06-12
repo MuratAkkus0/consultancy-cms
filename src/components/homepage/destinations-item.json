@@ -6,10 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "itemId": {
-      "type": "string",
-      "required": true
-    },
     "country": {
       "type": "string",
       "required": true
@@ -17,6 +13,26 @@
     "caption": {
       "type": "string",
       "required": true
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "flag": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

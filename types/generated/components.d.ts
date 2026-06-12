@@ -1860,9 +1860,10 @@ export interface HomepageDestinationsItem extends Struct.ComponentSchema {
     icon: 'earth';
   };
   attributes: {
+    bgImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     caption: Schema.Attribute.String & Schema.Attribute.Required;
     country: Schema.Attribute.String & Schema.Attribute.Required;
-    itemId: Schema.Attribute.String & Schema.Attribute.Required;
+    flag: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 

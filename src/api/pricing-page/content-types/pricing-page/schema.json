@@ -39,38 +39,30 @@
         }
       }
     },
-    "footer": {
-      "type": "string",
+    "packages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing-page.package",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "basic": {
+    "vip": {
       "type": "component",
       "repeatable": false,
-      "component": "pricing-page.basic",
+      "component": "pricing-page.vip",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "standard": {
+    "whyUs": {
       "type": "component",
       "repeatable": false,
-      "component": "pricing-page.standard",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "premium": {
-      "type": "component",
-      "repeatable": false,
-      "component": "pricing-page.premium",
+      "component": "pricing-page.why-us",
       "pluginOptions": {
         "i18n": {
           "localized": true

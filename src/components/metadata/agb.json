@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_metadata_agbs",
+  "info": {
+    "displayName": "AGB"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_datenschutz_section_items",
+  "info": {
+    "displayName": "Section Item",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_pricing_page_package",
+  "info": {
+    "displayName": "Package",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "i18n-shared.value-item"
+    },
+    "isPopular": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Başvuru Yap"
+    }
+  }
+}

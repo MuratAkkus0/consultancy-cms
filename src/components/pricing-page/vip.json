@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_pricing_page_vip",
+  "info": {
+    "displayName": "VIP",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Başvuru Yap"
+    }
+  }
+}

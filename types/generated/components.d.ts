@@ -2204,6 +2204,17 @@ export interface MetadataHome extends Struct.ComponentSchema {
   };
 }
 
+export interface MetadataImpressum extends Struct.ComponentSchema {
+  collectionName: 'components_metadata_impressums';
+  info: {
+    displayName: 'Impressum';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface MetadataPricing extends Struct.ComponentSchema {
   collectionName: 'components_metadata_pricing';
   info: {
@@ -2256,6 +2267,23 @@ export interface PricingPageBasic extends Struct.ComponentSchema {
   };
 }
 
+export interface PricingPagePackage extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_page_package';
+  info: {
+    displayName: 'Package';
+    icon: 'apps';
+  };
+  attributes: {
+    buttonText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Ba\u015Fvuru Yap'>;
+    color: Schema.Attribute.String;
+    features: Schema.Attribute.Component<'i18n-shared.value-item', true>;
+    icon: Schema.Attribute.String;
+    isPopular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface PricingPagePremium extends Struct.ComponentSchema {
   collectionName: 'components_pricing_page_premium';
   info: {
@@ -2287,6 +2315,34 @@ export interface PricingPageStandard extends Struct.ComponentSchema {
     name: Schema.Attribute.String;
     period: Schema.Attribute.String;
     price: Schema.Attribute.String;
+  };
+}
+
+export interface PricingPageVip extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_page_vip';
+  info: {
+    displayName: 'VIP';
+    icon: 'star';
+  };
+  attributes: {
+    buttonText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Ba\u015Fvuru Yap'>;
+    color: Schema.Attribute.String;
+    desc: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PricingPageWhyUs extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_page_why_us';
+  info: {
+    displayName: 'Why Us';
+    icon: 'question';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'i18n-shared.value-item', true>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -2760,12 +2816,16 @@ declare module '@strapi/strapi' {
       'metadata.contact': MetadataContact;
       'metadata.hizmetler': MetadataHizmetler;
       'metadata.home': MetadataHome;
+      'metadata.impressum': MetadataImpressum;
       'metadata.pricing': MetadataPricing;
       'metadata.services': MetadataServices;
       'metadata.success-stories': MetadataSuccessStories;
       'pricing-page.basic': PricingPageBasic;
+      'pricing-page.package': PricingPagePackage;
       'pricing-page.premium': PricingPagePremium;
       'pricing-page.standard': PricingPageStandard;
+      'pricing-page.vip': PricingPageVip;
+      'pricing-page.why-us': PricingPageWhyUs;
       'routing-page.common': RoutingPageCommon;
       'routing-page.dokumanlar': RoutingPageDokumanlar;
       'routing-page.kullanici-id': RoutingPageKullaniciId;

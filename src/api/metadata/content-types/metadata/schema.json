@@ -33,93 +33,123 @@
     },
     "home": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.home",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.home",
+      "repeatable": false
     },
     "blog": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.blog",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.blog",
+      "repeatable": false
     },
     "blogPost": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.blog-post",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.blog-post",
+      "repeatable": false
     },
     "contact": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.contact",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.contact",
+      "repeatable": false
     },
     "services": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.services",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.services",
+      "repeatable": false
     },
     "pricing": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.pricing",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.pricing",
+      "repeatable": false
     },
     "hizmetler": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.hizmetler",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.hizmetler",
+      "repeatable": false
     },
     "about": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.about",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.about",
+      "repeatable": false
     },
     "successStories": {
       "type": "component",
-      "repeatable": false,
-      "component": "metadata.success-stories",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "metadata.success-stories",
+      "repeatable": false
+    },
+    "impressum": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "metadata.impressum",
+      "repeatable": false
+    },
+    "agb": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "metadata.agb",
+      "repeatable": false
+    },
+    "datenschutz": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "metadata.datenschutz",
+      "repeatable": false
     }
   }
 }

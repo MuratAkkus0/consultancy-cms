@@ -29,6 +29,40 @@
     },
     "profilim": {
       "type": "string"
+    },
+    "adminDashboard": {
+      "type": "string"
+    },
+    "adminStudents": {
+      "type": "string"
+    },
+    "adminAdvisors": {
+      "type": "string"
+    },
+    "adminAssignments": {
+      "type": "string"
+    },
+    "switchToStudent": {
+      "type": "string"
+    },
+    "switchToAdvisor": {
+      "type": "string"
+    },
+    "switchToAdmin": {
+      "type": "string"
+    },
+    "advisorDashboard": {
+      "type": "string"
+    },
+    "advisorStudents": {
+      "type": "string"
+    },
+    "advisorAppointments": {
+      "type": "string"
+    },
+    "advisorMessages": {
+      "type": "string"
     }
+  }
   }
 }

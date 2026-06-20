@@ -112,6 +112,31 @@ export interface AboutPageVision extends Struct.ComponentSchema {
   };
 }
 
+export interface AgbHeader extends Struct.ComponentSchema {
+  collectionName: 'components_agb_headers';
+  info: {
+    displayName: 'Header';
+    icon: 'apps';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface AgbSectionItem extends Struct.ComponentSchema {
+  collectionName: 'components_agb_section_items';
+  info: {
+    displayName: 'Section Item';
+    icon: 'bulletList';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface AuthPageForgotPassword extends Struct.ComponentSchema {
   collectionName: 'components_auth_page_forgot_password';
   info: {
@@ -1593,6 +1618,7 @@ export interface DashboardPageSidebar extends Struct.ComponentSchema {
     icon: 'apps';
   };
   attributes: {
+    advisorStudents: Schema.Attribute.String;
     basvurularim: Schema.Attribute.String;
     belgelerim: Schema.Attribute.String;
     dashboard: Schema.Attribute.String;
@@ -1601,6 +1627,31 @@ export interface DashboardPageSidebar extends Struct.ComponentSchema {
     odemelerim: Schema.Attribute.String;
     profilim: Schema.Attribute.String;
     randevularim: Schema.Attribute.String;
+  };
+}
+
+export interface DatenschutzHeader extends Struct.ComponentSchema {
+  collectionName: 'components_datenschutz_headers';
+  info: {
+    displayName: 'Header';
+    icon: 'apps';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface DatenschutzSectionItem extends Struct.ComponentSchema {
+  collectionName: 'components_datenschutz_section_items';
+  info: {
+    displayName: 'Section Item';
+    icon: 'bulletList';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -2132,11 +2183,47 @@ export interface I18NSharedValueItem extends Struct.ComponentSchema {
   };
 }
 
+export interface ImpressumHeader extends Struct.ComponentSchema {
+  collectionName: 'components_impressum_headers';
+  info: {
+    displayName: 'Header';
+    icon: 'apps';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ImpressumSectionItem extends Struct.ComponentSchema {
+  collectionName: 'components_impressum_section_items';
+  info: {
+    displayName: 'Section Item';
+    icon: 'bulletList';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface MetadataAbout extends Struct.ComponentSchema {
   collectionName: 'components_metadata_about';
   info: {
     displayName: 'About';
     icon: 'apps';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface MetadataAgb extends Struct.ComponentSchema {
+  collectionName: 'components_metadata_agbs';
+  info: {
+    displayName: 'AGB';
   };
   attributes: {
     description: Schema.Attribute.String;
@@ -2173,6 +2260,17 @@ export interface MetadataContact extends Struct.ComponentSchema {
   info: {
     displayName: 'Contact';
     icon: 'apps';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface MetadataDatenschutz extends Struct.ComponentSchema {
+  collectionName: 'components_metadata_datenschutzes';
+  info: {
+    displayName: 'Datenschutz';
   };
   attributes: {
     description: Schema.Attribute.String;
@@ -2695,6 +2793,8 @@ declare module '@strapi/strapi' {
       'about-page.values': AboutPageValues;
       'about-page.values-items': AboutPageValuesItems;
       'about-page.vision': AboutPageVision;
+      'agb.header': AgbHeader;
+      'agb.section-item': AgbSectionItem;
       'auth-page.forgot-password': AuthPageForgotPassword;
       'auth-page.forgot-password-validation': AuthPageForgotPasswordValidation;
       'auth-page.login': AuthPageLogin;
@@ -2774,6 +2874,8 @@ declare module '@strapi/strapi' {
       'dashboard-page.pages-profile-tabs': DashboardPagePagesProfileTabs;
       'dashboard-page.routes': DashboardPageRoutes;
       'dashboard-page.sidebar': DashboardPageSidebar;
+      'datenschutz.header': DatenschutzHeader;
+      'datenschutz.section-item': DatenschutzSectionItem;
       'errors-page.not-found': ErrorsPageNotFound;
       'errors-page.runtime': ErrorsPageRuntime;
       'footer.cta': FooterCta;
@@ -2810,10 +2912,14 @@ declare module '@strapi/strapi' {
       'homepage.statistics': HomepageStatistics;
       'homepage.statistics-items': HomepageStatisticsItems;
       'i18n-shared.value-item': I18NSharedValueItem;
+      'impressum.header': ImpressumHeader;
+      'impressum.section-item': ImpressumSectionItem;
       'metadata.about': MetadataAbout;
+      'metadata.agb': MetadataAgb;
       'metadata.blog': MetadataBlog;
       'metadata.blog-post': MetadataBlogPost;
       'metadata.contact': MetadataContact;
+      'metadata.datenschutz': MetadataDatenschutz;
       'metadata.hizmetler': MetadataHizmetler;
       'metadata.home': MetadataHome;
       'metadata.impressum': MetadataImpressum;

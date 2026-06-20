@@ -14,6 +14,18 @@
     },
     "viewAll": {
       "type": "string"
+    },
+    "totalStudents": {
+      "type": "string"
+    },
+    "pendingApplications": {
+      "type": "string"
+    },
+    "upcomingAppointments": {
+      "type": "string"
+    },
+    "unreadMessages": {
+      "type": "string"
     }
   }
 }

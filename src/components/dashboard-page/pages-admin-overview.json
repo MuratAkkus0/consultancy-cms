@@ -11,6 +11,21 @@
     },
     "greeting": {
       "type": "string"
+    },
+    "totalStudents": {
+      "type": "string"
+    },
+    "totalAdvisors": {
+      "type": "string"
+    },
+    "unassignedStudents": {
+      "type": "string"
+    },
+    "pendingApplications": {
+      "type": "string"
+    },
+    "upcomingAppointments": {
+      "type": "string"
     }
   }
 }

@@ -558,6 +558,46 @@ export interface ApiAboutUsAboutUs extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAgbAgb extends Struct.SingleTypeSchema {
+  collectionName: 'agbs';
+  info: {
+    displayName: 'AGB';
+    pluralName: 'agbs';
+    singularName: 'agb';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    header: Schema.Attribute.Component<'agb.header', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::agb.agb'>;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.Component<'agb.section-item', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   collectionName: 'articles';
   info: {
@@ -933,6 +973,49 @@ export interface ApiDashboardPageDashboardPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiDatenschutzDatenschutz extends Struct.SingleTypeSchema {
+  collectionName: 'datenschutzes';
+  info: {
+    displayName: 'Datenschutz';
+    pluralName: 'datenschutzes';
+    singularName: 'datenschutz';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    header: Schema.Attribute.Component<'datenschutz.header', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::datenschutz.datenschutz'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.Component<'datenschutz.section-item', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiErrorsPageErrorsPage extends Struct.SingleTypeSchema {
   collectionName: 'errors_pages';
   info: {
@@ -1264,17 +1347,33 @@ export interface ApiImpressumImpressum extends Struct.SingleTypeSchema {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    header: Schema.Attribute.Component<'impressum.header', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::impressum.impressum'
-    > &
-      Schema.Attribute.Private;
+    >;
     publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.Component<'impressum.section-item', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1303,6 +1402,12 @@ export interface ApiMetadataMetadata extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    agb: Schema.Attribute.Component<'metadata.agb', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     blog: Schema.Attribute.Component<'metadata.blog', false> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1324,6 +1429,12 @@ export interface ApiMetadataMetadata extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    datenschutz: Schema.Attribute.Component<'metadata.datenschutz', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     description: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -2231,6 +2342,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-page.about-page': ApiAboutPageAboutPage;
       'api::about-us.about-us': ApiAboutUsAboutUs;
+      'api::agb.agb': ApiAgbAgb;
       'api::article.article': ApiArticleArticle;
       'api::auth-page.auth-page': ApiAuthPageAuthPage;
       'api::author.author': ApiAuthorAuthor;
@@ -2239,6 +2351,7 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::dashboard-page.dashboard-page': ApiDashboardPageDashboardPage;
+      'api::datenschutz.datenschutz': ApiDatenschutzDatenschutz;
       'api::errors-page.errors-page': ApiErrorsPageErrorsPage;
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;

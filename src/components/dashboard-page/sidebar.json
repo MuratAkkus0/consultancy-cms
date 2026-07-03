@@ -62,6 +62,15 @@
     },
     "advisorMessages": {
       "type": "string"
+    },
+    "adminPayments": {
+      "type": "string"
+    },
+    "adminCourses": {
+      "type": "string"
+    },
+    "advisorCourses": {
+      "type": "string"
     }
   }
 }

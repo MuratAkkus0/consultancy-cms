@@ -637,6 +637,23 @@ export interface ContactPageMap extends Struct.ComponentSchema {
   };
 }
 
+export interface DashboardPageGroups extends Struct.ComponentSchema {
+  collectionName: 'components_dashboard_page_groups';
+  info: {
+    displayName: 'groups';
+  };
+  attributes: {
+    ausbildung: Schema.Attribute.String;
+    bachelor: Schema.Attribute.String;
+    general: Schema.Attribute.String;
+    language_course: Schema.Attribute.String;
+    master: Schema.Attribute.String;
+    phd: Schema.Attribute.String;
+    sec81a: Schema.Attribute.String;
+    studienkolleg: Schema.Attribute.String;
+  };
+}
+
 export interface DashboardPagePages extends Struct.ComponentSchema {
   collectionName: 'components_dashboard_page_pages';
   info: {
@@ -809,7 +826,15 @@ export interface DashboardPagePagesAdminOverview
   };
   attributes: {
     greeting: Schema.Attribute.String;
+    monthlyEarnings: Schema.Attribute.String;
+    paid: Schema.Attribute.String;
+    pending: Schema.Attribute.String;
+    pendingApplications: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    totalAdvisors: Schema.Attribute.String;
+    totalStudents: Schema.Attribute.String;
+    unassignedStudents: Schema.Attribute.String;
+    upcomingAppointments: Schema.Attribute.String;
   };
 }
 
@@ -902,7 +927,11 @@ export interface DashboardPagePagesAdvisorOverview
   };
   attributes: {
     greeting: Schema.Attribute.String;
+    pendingApplications: Schema.Attribute.String;
     recentStudents: Schema.Attribute.String;
+    totalStudents: Schema.Attribute.String;
+    unreadMessages: Schema.Attribute.String;
+    upcomingAppointments: Schema.Attribute.String;
     viewAll: Schema.Attribute.String;
   };
 }
@@ -1226,7 +1255,11 @@ export interface DashboardPagePagesDocuments extends Struct.ComponentSchema {
     icon: 'apps';
   };
   attributes: {
+    allAssigned: Schema.Attribute.String;
+    assignButton: Schema.Attribute.String;
+    assignNotePlaceholder: Schema.Attribute.String;
     assignTitle: Schema.Attribute.String;
+    cancel: Schema.Attribute.String;
     categories: Schema.Attribute.Component<
       'dashboard-page.pages-documents-categories',
       false
@@ -1234,8 +1267,13 @@ export interface DashboardPagePagesDocuments extends Struct.ComponentSchema {
     description: Schema.Attribute.String;
     emptyDesc: Schema.Attribute.String;
     emptyList: Schema.Attribute.String;
+    groups: Schema.Attribute.Component<'dashboard-page.groups', false>;
+    noSearchResults: Schema.Attribute.String;
     progressTitle: Schema.Attribute.String;
     searchPlaceholder: Schema.Attribute.String;
+    selectedCount: Schema.Attribute.String;
+    subgroups: Schema.Attribute.JSON;
+    templates: Schema.Attribute.JSON;
     title: Schema.Attribute.String;
   };
 }
@@ -1618,15 +1656,29 @@ export interface DashboardPageSidebar extends Struct.ComponentSchema {
     icon: 'apps';
   };
   attributes: {
+    adminAdvisors: Schema.Attribute.String;
+    adminAssignments: Schema.Attribute.String;
+    adminCourses: Schema.Attribute.String;
+    adminDashboard: Schema.Attribute.String;
+    adminPayments: Schema.Attribute.String;
+    adminStudents: Schema.Attribute.String;
+    advisorAppointments: Schema.Attribute.String;
+    advisorCourses: Schema.Attribute.String;
+    advisorDashboard: Schema.Attribute.String;
+    advisorMessages: Schema.Attribute.String;
     advisorStudents: Schema.Attribute.String;
     basvurularim: Schema.Attribute.String;
     belgelerim: Schema.Attribute.String;
     dashboard: Schema.Attribute.String;
     kurslarim: Schema.Attribute.String;
+    logout: Schema.Attribute.String;
     mesajlarim: Schema.Attribute.String;
     odemelerim: Schema.Attribute.String;
     profilim: Schema.Attribute.String;
     randevularim: Schema.Attribute.String;
+    switchToAdmin: Schema.Attribute.String;
+    switchToAdvisor: Schema.Attribute.String;
+    switchToStudent: Schema.Attribute.String;
   };
 }
 
@@ -2826,6 +2878,7 @@ declare module '@strapi/strapi' {
       'contact-page.info-office': ContactPageInfoOffice;
       'contact-page.info-social': ContactPageInfoSocial;
       'contact-page.map': ContactPageMap;
+      'dashboard-page.groups': DashboardPageGroups;
       'dashboard-page.pages': DashboardPagePages;
       'dashboard-page.pages-admin-advisors': DashboardPagePagesAdminAdvisors;
       'dashboard-page.pages-admin-advisors-create': DashboardPagePagesAdminAdvisorsCreate;

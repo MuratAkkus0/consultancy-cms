@@ -14,8 +14,8 @@
     },
     "categories": {
       "type": "component",
-      "repeatable": false,
-      "component": "dashboard-page.pages-documents-categories"
+      "component": "dashboard-page.pages-documents-categories",
+      "repeatable": false
     },
     "progressTitle": {
       "type": "string"
@@ -29,8 +29,37 @@
     "assignTitle": {
       "type": "string"
     },
+    "assignButton": {
+      "type": "string"
+    },
+    "assignNotePlaceholder": {
+      "type": "string"
+    },
+    "cancel": {
+      "type": "string"
+    },
+    "selectedCount": {
+      "type": "string"
+    },
+    "noSearchResults": {
+      "type": "string"
+    },
+    "allAssigned": {
+      "type": "string"
+    },
     "searchPlaceholder": {
       "type": "string"
+    },
+    "groups": {
+      "type": "component",
+      "component": "dashboard-page.groups",
+      "repeatable": false
+    },
+    "subgroups": {
+      "type": "json"
+    },
+    "templates": {
+      "type": "json"
     }
   }
 }

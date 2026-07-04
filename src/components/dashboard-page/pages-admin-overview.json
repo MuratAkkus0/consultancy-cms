@@ -26,6 +26,15 @@
     },
     "upcomingAppointments": {
       "type": "string"
+    },
+    "monthlyEarnings": {
+      "type": "string"
+    },
+    "paid": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
     }
   }
 }

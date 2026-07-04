@@ -71,6 +71,9 @@
     },
     "advisorCourses": {
       "type": "string"
+    },
+    "logout": {
+      "type": "string"
     }
   }
 }

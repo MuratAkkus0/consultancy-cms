@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_dashboard_page_groups",
+  "info": {
+    "displayName": "groups"
+  },
+  "options": {},
+  "attributes": {
+    "general": {
+      "type": "string"
+    },
+    "bachelor": {
+      "type": "string"
+    },
+    "master": {
+      "type": "string"
+    },
+    "phd": {
+      "type": "string"
+    },
+    "ausbildung": {
+      "type": "string"
+    },
+    "studienkolleg": {
+      "type": "string"
+    },
+    "language_course": {
+      "type": "string"
+    },
+    "sec81a": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_notes",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Notes",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "addNote": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "privateNote": {
+      "type": "string"
+    },
+    "privateNoteDesc": {
+      "type": "string"
+    },
+    "private": {
+      "type": "string"
+    },
+    "public": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_dashboard_page_pages_profile_options",
+  "info": {
+    "displayName": "Pages / Profile / Options",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "maritalStatusSingle": {
+      "type": "string"
+    },
+    "maritalStatusMarried": {
+      "type": "string"
+    },
+    "degreeBachelors": {
+      "type": "string"
+    },
+    "degreeMasters": {
+      "type": "string"
+    },
+    "degreePhd": {
+      "type": "string"
+    },
+    "degreeAssociates": {
+      "type": "string"
+    },
+    "degreeHighSchool": {
+      "type": "string"
+    },
+    "languageA1": {
+      "type": "string"
+    },
+    "languageA2": {
+      "type": "string"
+    },
+    "languageB1": {
+      "type": "string"
+    },
+    "languageB2": {
+      "type": "string"
+    },
+    "languageC1": {
+      "type": "string"
+    },
+    "languageC2": {
+      "type": "string"
+    }
+  }
+}

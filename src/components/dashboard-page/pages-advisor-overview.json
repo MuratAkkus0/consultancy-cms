@@ -26,6 +26,42 @@
     },
     "unreadMessages": {
       "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "statStudents": {
+      "type": "string"
+    },
+    "statAppointments": {
+      "type": "string"
+    },
+    "statApplications": {
+      "type": "string"
+    },
+    "statMessages": {
+      "type": "string"
+    },
+    "noAppointments": {
+      "type": "string"
+    },
+    "noApplications": {
+      "type": "string"
+    },
+    "appointmentTypes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-overview-appointment-types"
+    },
+    "statusLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-overview-status-labels"
+    },
+    "applicationStatusLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-overview-application-status-labels"
     }
   }
 }

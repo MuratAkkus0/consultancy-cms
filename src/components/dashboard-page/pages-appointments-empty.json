@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_appointments_empty",
+  "info": {
+    "displayName": "Pages / Appointments / Empty",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "upcoming": {
+      "type": "string"
+    },
+    "past": {
+      "type": "string"
+    },
+    "cancelled": {
+      "type": "string"
+    }
+  }
+}

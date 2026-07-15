@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_dashboard_page_pages_profile_sections",
+  "info": {
+    "displayName": "Pages / Profile / Sections",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "personalInfo": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "string"
+    },
+    "certificates": {
+      "type": "string"
+    },
+    "references": {
+      "type": "string"
+    }
+  }
+}

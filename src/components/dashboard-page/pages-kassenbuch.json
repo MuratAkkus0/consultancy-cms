@@ -1,0 +1,118 @@
+{
+  "collectionName": "components_dashboard_page_pages_kassenbuch",
+  "info": {
+    "displayName": "Pages / Kassenbuch",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "addEntry": {
+      "type": "string"
+    },
+    "income": {
+      "type": "string"
+    },
+    "expense": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "file": {
+      "type": "string"
+    },
+    "downloadReport": {
+      "type": "string"
+    },
+    "totalIncome": {
+      "type": "string"
+    },
+    "totalExpense": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "string"
+    },
+    "newEntry": {
+      "type": "string"
+    },
+    "cancel": {
+      "type": "string"
+    },
+    "save": {
+      "type": "string"
+    },
+    "monthly": {
+      "type": "string"
+    },
+    "yearly": {
+      "type": "string"
+    },
+    "allYear": {
+      "type": "string"
+    },
+    "noEntries": {
+      "type": "string"
+    },
+    "noEntriesDesc": {
+      "type": "string"
+    },
+    "titleField": {
+      "type": "string"
+    },
+    "descriptionField": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "delete": {
+      "type": "string"
+    },
+    "invoiceFile": {
+      "type": "string"
+    },
+    "edit": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "allPeriod": {
+      "type": "string"
+    },
+    "modalTitle": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "typePlaceholder": {
+      "type": "string"
+    },
+    "titlePlaceholder": {
+      "type": "string"
+    },
+    "descriptionPlaceholder": {
+      "type": "string"
+    },
+    "amountPlaceholder": {
+      "type": "string"
+    },
+    "datePlaceholder": {
+      "type": "string"
+    },
+    "fileAccept": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dashboard_page_pages_appointments_actions",
+  "info": {
+    "displayName": "Pages / Appointments / Actions",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "joinMeeting": {
+      "type": "string"
+    },
+    "timeExpired": {
+      "type": "string"
+    }
+  }
+}

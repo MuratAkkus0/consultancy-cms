@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_payment_statuses",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Payment Statuses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "paid": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    },
+    "failed": {
+      "type": "string"
+    },
+    "refunded": {
+      "type": "string"
+    }
+  }
+}

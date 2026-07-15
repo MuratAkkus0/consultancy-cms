@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_translation_status",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Translation Status",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "completed": {
+      "type": "string"
+    },
+    "inProgress": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    }
+  }
+}

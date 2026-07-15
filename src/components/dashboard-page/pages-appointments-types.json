@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_appointments_types",
+  "info": {
+    "displayName": "Pages / Appointments / Types",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "consultation": {
+      "type": "string"
+    },
+    "visa": {
+      "type": "string"
+    },
+    "languageCourse": {
+      "type": "string"
+    },
+    "application": {
+      "type": "string"
+    }
+  }
+}

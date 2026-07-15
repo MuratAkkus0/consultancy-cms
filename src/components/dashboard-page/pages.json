@@ -95,6 +95,16 @@
       "type": "component",
       "repeatable": false,
       "component": "dashboard-page.pages-overview"
+    },
+    "adminPayments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-payments"
+    },
+    "kassenbuch": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-kassenbuch"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_payments_success",
+  "info": {
+    "displayName": "Pages / Admin Payments / Success",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "statusUpdated": {
+      "type": "string"
+    },
+    "entryDeleted": {
+      "type": "string"
+    }
+  }
+}

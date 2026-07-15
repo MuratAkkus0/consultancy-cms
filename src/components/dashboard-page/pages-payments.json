@@ -29,6 +29,11 @@
     },
     "empty": {
       "type": "string"
+    },
+    "modal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-payments-modal"
     }
   }
 }

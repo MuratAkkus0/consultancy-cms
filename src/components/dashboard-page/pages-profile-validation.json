@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_profile_validation",
+  "info": {
+    "displayName": "Pages / Profile / Validation",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "saveSuccess": {
+      "type": "string"
+    },
+    "pdfError": {
+      "type": "string"
+    },
+    "pdfUnknownError": {
+      "type": "string"
+    },
+    "photoSizeError": {
+      "type": "string"
+    }
+  }
+}

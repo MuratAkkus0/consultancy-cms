@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_dashboard_page_pages_admin_payments",
+  "info": {
+    "displayName": "Pages / Admin Payments",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "empty": {
+      "type": "string"
+    },
+    "emptyDesc": {
+      "type": "string"
+    },
+    "delete": {
+      "type": "string"
+    },
+    "save": {
+      "type": "string"
+    },
+    "confirmTitle": {
+      "type": "string"
+    },
+    "confirmMessage": {
+      "type": "string"
+    },
+    "statuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-payments-statuses"
+    },
+    "successMessages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-admin-payments-success"
+    }
+  }
+}

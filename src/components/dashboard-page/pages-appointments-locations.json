@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dashboard_page_pages_appointments_locations",
+  "info": {
+    "displayName": "Pages / Appointments / Locations",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "faceToFace": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

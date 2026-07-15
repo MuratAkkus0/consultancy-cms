@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_documents_actions",
+  "info": {
+    "displayName": "Pages / Documents / Actions",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "view": {
+      "type": "string"
+    },
+    "download": {
+      "type": "string"
+    },
+    "upload": {
+      "type": "string"
+    }
+  }
+}

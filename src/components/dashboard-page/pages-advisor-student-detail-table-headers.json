@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_table_headers",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Table Headers",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "note": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "document": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

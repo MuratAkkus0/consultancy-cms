@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_appointment_statuses",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Appointment Statuses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "upcoming": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "string"
+    },
+    "cancelled": {
+      "type": "string"
+    }
+  }
+}

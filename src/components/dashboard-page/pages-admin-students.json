@@ -49,6 +49,15 @@
     },
     "confirmDeleteMessage": {
       "type": "string"
+    },
+    "empty": {
+      "type": "string"
+    },
+    "unassigned": {
+      "type": "string"
+    },
+    "removeAssignment": {
+      "type": "string"
     }
   }
 }

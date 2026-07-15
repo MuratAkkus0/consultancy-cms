@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_documents_upload",
+  "info": {
+    "displayName": "Pages / Documents / Upload",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "loading": {
+      "type": "string"
+    },
+    "uploadDate": {
+      "type": "string"
+    },
+    "notYetUploaded": {
+      "type": "string"
+    }
+  }
+}

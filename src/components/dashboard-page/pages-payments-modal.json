@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_dashboard_page_pages_payments_modal",
+  "info": {
+    "displayName": "Pages / Payments / Modal",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "amountLabel": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "string"
+    },
+    "copyCode": {
+      "type": "string"
+    },
+    "bankInfo": {
+      "type": "string"
+    },
+    "bank": {
+      "type": "string"
+    },
+    "accountHolder": {
+      "type": "string"
+    },
+    "iban": {
+      "type": "string"
+    },
+    "copyIban": {
+      "type": "string"
+    },
+    "bic": {
+      "type": "string"
+    },
+    "warning": {
+      "type": "string"
+    },
+    "close": {
+      "type": "string"
+    }
+  }
+}

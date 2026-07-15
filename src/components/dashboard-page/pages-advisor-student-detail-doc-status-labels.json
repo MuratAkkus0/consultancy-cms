@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_doc_status_labels",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Doc Status Labels",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "approved": {
+      "type": "string"
+    },
+    "pending": {
+      "type": "string"
+    },
+    "missing": {
+      "type": "string"
+    }
+  }
+}

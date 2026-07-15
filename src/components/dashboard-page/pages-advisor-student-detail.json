@@ -55,6 +55,56 @@
       "type": "component",
       "repeatable": false,
       "component": "dashboard-page.pages-advisor-student-detail-fields"
+    },
+    "statusLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-status-labels"
+    },
+    "docStatusLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-doc-status-labels"
+    },
+    "translationStatus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-translation-status"
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-actions"
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-notes"
+    },
+    "paymentCategories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-payment-categories"
+    },
+    "paymentStatuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-payment-statuses"
+    },
+    "booleans": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-booleans"
+    },
+    "tableHeaders": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-table-headers"
+    },
+    "appointmentStatuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-appointment-statuses"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_payment_categories",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Payment Categories",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "consultation": {
+      "type": "string"
+    },
+    "application": {
+      "type": "string"
+    },
+    "course": {
+      "type": "string"
+    },
+    "visa": {
+      "type": "string"
+    }
+  }
+}

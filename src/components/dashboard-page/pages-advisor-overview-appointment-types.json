@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_overview_appointment_types",
+  "info": {
+    "displayName": "Pages / Advisor Overview / Appointment Types",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "consultation": {
+      "type": "string"
+    },
+    "visa": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "application": {
+      "type": "string"
+    }
+  }
+}

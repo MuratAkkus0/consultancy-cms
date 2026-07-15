@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_actions",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Actions",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "newApplication": {
+      "type": "string"
+    },
+    "edit": {
+      "type": "string"
+    },
+    "assignDocument": {
+      "type": "string"
+    },
+    "confirm": {
+      "type": "string"
+    },
+    "wait": {
+      "type": "string"
+    },
+    "missing": {
+      "type": "string"
+    },
+    "remove": {
+      "type": "string"
+    },
+    "startTranslation": {
+      "type": "string"
+    },
+    "start": {
+      "type": "string"
+    },
+    "complete": {
+      "type": "string"
+    },
+    "createAppointment": {
+      "type": "string"
+    },
+    "cancel": {
+      "type": "string"
+    },
+    "addPayment": {
+      "type": "string"
+    },
+    "addNote": {
+      "type": "string"
+    },
+    "save": {
+      "type": "string"
+    }
+  }
+}

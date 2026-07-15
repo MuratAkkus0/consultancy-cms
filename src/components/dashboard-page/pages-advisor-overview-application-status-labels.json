@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_overview_application_status_labels",
+  "info": {
+    "displayName": "Pages / Advisor Overview / Application Status Labels",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "accepted": {
+      "type": "string"
+    },
+    "interview": {
+      "type": "string"
+    },
+    "reviewing": {
+      "type": "string"
+    },
+    "rejected": {
+      "type": "string"
+    }
+  }
+}

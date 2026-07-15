@@ -60,6 +60,27 @@
     },
     "templates": {
       "type": "json"
+    },
+    "statuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-documents-statuses"
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-documents-actions"
+    },
+    "upload": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-documents-upload"
+    },
+    "progressCompleted": {
+      "type": "string"
+    },
+    "progressSuffix": {
+      "type": "string"
     }
   }
 }

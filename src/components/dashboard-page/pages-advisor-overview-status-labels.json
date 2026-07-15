@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_overview_status_labels",
+  "info": {
+    "displayName": "Pages / Advisor Overview / Status Labels",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "upcoming": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "string"
+    },
+    "cancelled": {
+      "type": "string"
+    }
+  }
+}

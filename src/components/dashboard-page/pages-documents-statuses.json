@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dashboard_page_pages_documents_statuses",
+  "info": {
+    "displayName": "Pages / Documents / Statuses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "approved": {
+      "type": "string"
+    },
+    "reviewing": {
+      "type": "string"
+    },
+    "notUploaded": {
+      "type": "string"
+    }
+  }
+}

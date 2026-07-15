@@ -16,6 +16,29 @@
       "type": "component",
       "repeatable": false,
       "component": "dashboard-page.pages-appointments-filters"
+    },
+    "types": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-types"
+    },
+    "locations": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-locations"
+    },
+    "empty": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-empty"
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-actions"
+    },
+    "note": {
+      "type": "string"
     }
   }
 }

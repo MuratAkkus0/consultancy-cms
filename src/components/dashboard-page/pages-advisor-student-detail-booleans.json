@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dashboard_page_pages_advisor_student_detail_booleans",
+  "info": {
+    "displayName": "Pages / Advisor Student Detail / Booleans",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "yes": {
+      "type": "string"
+    },
+    "no": {
+      "type": "string"
+    }
+  }
+}

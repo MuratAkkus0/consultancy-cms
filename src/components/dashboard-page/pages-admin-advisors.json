@@ -31,6 +31,15 @@
     },
     "defaultTitle": {
       "type": "string"
+    },
+    "activated": {
+      "type": "string"
+    },
+    "deactivated": {
+      "type": "string"
+    },
+    "deactivate": {
+      "type": "string"
     }
   }
 }

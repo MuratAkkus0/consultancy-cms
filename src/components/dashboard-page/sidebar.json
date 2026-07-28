@@ -74,6 +74,10 @@
     },
     "logout": {
       "type": "string"
+    },
+    "kassenbuch": {
+      "type": "string",
+      "default": "Kassenbuch"
     }
   }
 }

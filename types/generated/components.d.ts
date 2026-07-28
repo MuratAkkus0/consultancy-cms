@@ -746,12 +746,15 @@ export interface DashboardPagePagesAdminAdvisors
     icon: 'apps';
   };
   attributes: {
+    activated: Schema.Attribute.String;
     confirmUnassignMessage: Schema.Attribute.String;
     confirmUnassignTitle: Schema.Attribute.String;
     createAdvisor: Schema.Attribute.Component<
       'dashboard-page.pages-admin-advisors-create',
       false
     >;
+    deactivate: Schema.Attribute.String;
+    deactivated: Schema.Attribute.String;
     defaultTitle: Schema.Attribute.String;
     description: Schema.Attribute.String;
     empty: Schema.Attribute.String;
@@ -2412,6 +2415,8 @@ export interface DashboardPageSidebar extends Struct.ComponentSchema {
     basvurularim: Schema.Attribute.String;
     belgelerim: Schema.Attribute.String;
     dashboard: Schema.Attribute.String;
+    kassenbuch: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Kassenbuch'>;
     kurslarim: Schema.Attribute.String;
     logout: Schema.Attribute.String;
     mesajlarim: Schema.Attribute.String;

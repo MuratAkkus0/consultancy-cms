@@ -11,6 +11,9 @@
     },
     "timeExpired": {
       "type": "string"
+    },
+    "linkActiveBefore": {
+      "type": "string"
     }
   }
 }

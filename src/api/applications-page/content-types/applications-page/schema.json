@@ -24,7 +24,7 @@
     "lastUpdate": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
     "edit": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
     "upcomingInterview": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
-    "filterOptions": { "type": "json", "pluginOptions": { "i18n": { "localized": true } } },
+    "filters": { "type": "json", "pluginOptions": { "i18n": { "localized": true } } },
     "statuses": { "type": "json", "pluginOptions": { "i18n": { "localized": true } } }
   }
 }

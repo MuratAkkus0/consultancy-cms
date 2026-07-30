@@ -1541,6 +1541,7 @@ export interface DashboardPagePagesAppointmentsActions
   };
   attributes: {
     joinMeeting: Schema.Attribute.String;
+    linkActiveBefore: Schema.Attribute.String;
     timeExpired: Schema.Attribute.String;
   };
 }
@@ -1753,6 +1754,7 @@ export interface DashboardPagePagesDocumentsUpload
     loading: Schema.Attribute.String;
     notYetUploaded: Schema.Attribute.String;
     uploadDate: Schema.Attribute.String;
+    uploadFailed: Schema.Attribute.String;
   };
 }
 

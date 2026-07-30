@@ -636,7 +636,7 @@ export interface ApiApplicationsPageApplicationsPage
           localized: true;
         };
       }>;
-    filterOptions: Schema.Attribute.JSON &
+    filters: Schema.Attribute.JSON &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

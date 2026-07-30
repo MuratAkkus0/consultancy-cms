@@ -107,6 +107,12 @@
     },
     "organization": {
       "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "preferredLanguage": {
+      "type": "string"
     }
   }
 }

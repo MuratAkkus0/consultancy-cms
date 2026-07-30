@@ -14,6 +14,9 @@
     },
     "notYetUploaded": {
       "type": "string"
+    },
+    "uploadFailed": {
+      "type": "string"
     }
   }
 }

@@ -44,6 +44,30 @@
     },
     "languageC2": {
       "type": "string"
+    },
+    "selectGender": {
+      "type": "string"
+    },
+    "male": {
+      "type": "string"
+    },
+    "female": {
+      "type": "string"
+    },
+    "preferNotToSay": {
+      "type": "string"
+    },
+    "selectLanguage": {
+      "type": "string"
+    },
+    "turkish": {
+      "type": "string"
+    },
+    "english": {
+      "type": "string"
+    },
+    "german": {
+      "type": "string"
     }
   }
 }

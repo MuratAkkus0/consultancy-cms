@@ -70,12 +70,13 @@ Content is read over Strapi's REST API at `/api/<plural-name>`, gated by the rol
 **Settings → Users & Permissions → Roles**. Public marketing content needs the `public` role
 to have `find`/`findOne` on the relevant types; anything else needs an API token.
 
-## Known gaps
+## Roadmap
 
-- No committed `.env.example`, so the required environment variables are undiscoverable from
+This project is still under active development. The following are planned rather than done:
+
+- **A committed `.env.example`**, so the required environment variables are discoverable from
   the repository alone.
-- SQLite is fine locally but is not a sensible target for a deployed instance. The PostgreSQL
-  path is available but not configured here.
-- Schema names are English while the content is German-facing. That is a reasonable
-  convention, but it is currently implicit — worth stating in the content model rather than
-  letting it drift.
+- **PostgreSQL for deployed environments.** SQLite is fine locally; the `pg` driver is already
+  installed, so this is configuration in `config/database.ts` rather than new dependencies.
+- **Documenting the naming convention.** Schema names are English while the content is
+  German-facing — a reasonable split, but currently implicit rather than stated.

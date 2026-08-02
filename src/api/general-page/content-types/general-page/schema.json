@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "general_pages",
+  "info": {
+    "singularName": "general-page",
+    "pluralName": "general-pages",
+    "displayName": "General Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "common": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general-page.common",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

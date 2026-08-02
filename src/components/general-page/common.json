@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_general_page_common",
+  "info": {
+    "displayName": "Common",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "yes": {
+      "type": "string"
+    },
+    "no": {
+      "type": "string"
+    },
+    "back": {
+      "type": "string"
+    },
+    "next": {
+      "type": "string"
+    }
+  }
+}

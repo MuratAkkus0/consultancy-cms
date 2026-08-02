@@ -1251,6 +1251,43 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiGeneralPageGeneralPage extends Struct.SingleTypeSchema {
+  collectionName: 'general_pages';
+  info: {
+    displayName: 'General Page';
+    pluralName: 'general-pages';
+    singularName: 'general-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    common: Schema.Attribute.Component<'general-page.common', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::general-page.general-page'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -2701,6 +2738,7 @@ declare module '@strapi/strapi' {
       'api::datenschutz.datenschutz': ApiDatenschutzDatenschutz;
       'api::errors-page.errors-page': ApiErrorsPageErrorsPage;
       'api::footer.footer': ApiFooterFooter;
+      'api::general-page.general-page': ApiGeneralPageGeneralPage;
       'api::global.global': ApiGlobalGlobal;
       'api::header.header': ApiHeaderHeader;
       'api::homepage.homepage': ApiHomepageHomepage;

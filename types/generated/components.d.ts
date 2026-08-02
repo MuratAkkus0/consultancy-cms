@@ -2254,6 +2254,7 @@ export interface DashboardPagePagesProfileFields
     email: Schema.Attribute.String;
     endDate: Schema.Attribute.String;
     firstName: Schema.Attribute.String;
+    gender: Schema.Attribute.String;
     github: Schema.Attribute.String;
     gpa: Schema.Attribute.String;
     issuingOrganization: Schema.Attribute.String;
@@ -2268,6 +2269,7 @@ export interface DashboardPagePagesProfileFields
     organization: Schema.Attribute.String;
     phone: Schema.Attribute.String;
     position: Schema.Attribute.String;
+    preferredLanguage: Schema.Attribute.String;
     professionalSummary: Schema.Attribute.String;
     referenceName: Schema.Attribute.String;
     responsibilities: Schema.Attribute.String;
@@ -2292,14 +2294,22 @@ export interface DashboardPagePagesProfileOptions
     degreeHighSchool: Schema.Attribute.String;
     degreeMasters: Schema.Attribute.String;
     degreePhd: Schema.Attribute.String;
+    english: Schema.Attribute.String;
+    female: Schema.Attribute.String;
+    german: Schema.Attribute.String;
     languageA1: Schema.Attribute.String;
     languageA2: Schema.Attribute.String;
     languageB1: Schema.Attribute.String;
     languageB2: Schema.Attribute.String;
     languageC1: Schema.Attribute.String;
     languageC2: Schema.Attribute.String;
+    male: Schema.Attribute.String;
     maritalStatusMarried: Schema.Attribute.String;
     maritalStatusSingle: Schema.Attribute.String;
+    preferNotToSay: Schema.Attribute.String;
+    selectGender: Schema.Attribute.String;
+    selectLanguage: Schema.Attribute.String;
+    turkish: Schema.Attribute.String;
   };
 }
 
@@ -2507,6 +2517,20 @@ export interface FooterQuickLinks extends Struct.ComponentSchema {
   attributes: {
     href: Schema.Attribute.String;
     label: Schema.Attribute.String;
+  };
+}
+
+export interface GeneralPageCommon extends Struct.ComponentSchema {
+  collectionName: 'components_general_page_common';
+  info: {
+    displayName: 'Common';
+    icon: 'earth';
+  };
+  attributes: {
+    back: Schema.Attribute.String;
+    next: Schema.Attribute.String;
+    no: Schema.Attribute.String;
+    yes: Schema.Attribute.String;
   };
 }
 
@@ -3715,6 +3739,7 @@ declare module '@strapi/strapi' {
       'errors-page.runtime': ErrorsPageRuntime;
       'footer.cta': FooterCta;
       'footer.quick-links': FooterQuickLinks;
+      'general-page.common': GeneralPageCommon;
       'header.bottom-nav': HeaderBottomNav;
       'header.nav-links': HeaderNavLinks;
       'homepage.accommodation': HomepageAccommodation;

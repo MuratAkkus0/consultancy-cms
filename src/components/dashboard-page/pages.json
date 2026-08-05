@@ -41,11 +41,6 @@
       "repeatable": false,
       "component": "dashboard-page.pages-profile"
     },
-    "preInterview": {
-      "type": "component",
-      "repeatable": false,
-      "component": "dashboard-page.pages-pre-interview"
-    },
     "adminOverview": {
       "type": "component",
       "repeatable": false,

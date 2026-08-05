@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_dashboard_page_pages_pre_interview_fields",
+  "collectionName": "components_onboarding_page_onboarding_fields",
   "info": {
-    "displayName": "Pages / Pre Interview / Fields",
+    "displayName": "Onboarding / Fields",
     "icon": "apps"
   },
   "options": {},

@@ -730,10 +730,6 @@ export interface DashboardPagePages extends Struct.ComponentSchema {
       'dashboard-page.pages-payments',
       false
     >;
-    preInterview: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview',
-      false
-    >;
     profile: Schema.Attribute.Component<'dashboard-page.pages-profile', false>;
   };
 }
@@ -1953,187 +1949,6 @@ export interface DashboardPagePagesPaymentsStatuses
   };
 }
 
-export interface DashboardPagePagesPreInterview extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview';
-  info: {
-    displayName: 'Pages / Pre Interview';
-    icon: 'apps';
-  };
-  attributes: {
-    educationOptions: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview-education-options',
-      false
-    >;
-    errors: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview-errors',
-      false
-    >;
-    fields: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview-fields',
-      false
-    >;
-    fundingOptions: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview-funding-options',
-      false
-    >;
-    steps: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview-steps',
-      false
-    >;
-    submit: Schema.Attribute.String;
-    submitting: Schema.Attribute.String;
-    subtitle: Schema.Attribute.String;
-    success: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview-success',
-      false
-    >;
-    targetEducationOptions: Schema.Attribute.Component<
-      'dashboard-page.pages-pre-interview-target-education-options',
-      false
-    >;
-    title: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesPreInterviewEducationOptions
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview_educa_2n1es6';
-  info: {
-    displayName: 'Pages / Pre Interview / Education Options';
-    icon: 'apps';
-  };
-  attributes: {
-    lise_mezunu: Schema.Attribute.String;
-    lise_ogrencisi: Schema.Attribute.String;
-    universite_mezunu: Schema.Attribute.String;
-    universite_ogrencisi: Schema.Attribute.String;
-    yuksek_lisans: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesPreInterviewErrors
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview_errors';
-  info: {
-    displayName: 'Pages / Pre Interview / Errors';
-    icon: 'apps';
-  };
-  attributes: {
-    consentRequired: Schema.Attribute.String;
-    requiredFields: Schema.Attribute.String;
-    submitFailed: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesPreInterviewFields
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview_fields';
-  info: {
-    displayName: 'Pages / Pre Interview / Fields';
-    icon: 'apps';
-  };
-  attributes: {
-    birthDate: Schema.Attribute.String;
-    certificates: Schema.Attribute.String;
-    certificatesPlaceholder: Schema.Attribute.String;
-    city: Schema.Attribute.String;
-    consentText: Schema.Attribute.String;
-    country: Schema.Attribute.String;
-    currentVisaProcess: Schema.Attribute.String;
-    department: Schema.Attribute.String;
-    educationStatus: Schema.Attribute.String;
-    email: Schema.Attribute.String;
-    englishLevel: Schema.Attribute.String;
-    expectations: Schema.Attribute.String;
-    firstName: Schema.Attribute.String;
-    fundingSource: Schema.Attribute.String;
-    germanLevel: Schema.Attribute.String;
-    gpa: Schema.Attribute.String;
-    graduationYear: Schema.Attribute.String;
-    hasGreenPassport: Schema.Attribute.String;
-    lastName: Schema.Attribute.String;
-    monthlyBudget: Schema.Attribute.String;
-    nationality: Schema.Attribute.String;
-    notes: Schema.Attribute.String;
-    passportValidity: Schema.Attribute.String;
-    phone: Schema.Attribute.String;
-    previousAbroadExperience: Schema.Attribute.String;
-    previousVisaApplication: Schema.Attribute.String;
-    schengen90DaysUsed: Schema.Attribute.String;
-    schengenEntry: Schema.Attribute.String;
-    school: Schema.Attribute.String;
-    targetCountry: Schema.Attribute.String;
-    targetEducationType: Schema.Attribute.String;
-    targetField: Schema.Attribute.String;
-    targetStartDate: Schema.Attribute.String;
-    visaRejectionReason: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesPreInterviewFundingOptions
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview_fundi_1ec87xn';
-  info: {
-    displayName: 'Pages / Pre Interview / Funding Options';
-    icon: 'apps';
-  };
-  attributes: {
-    aile_destegi: Schema.Attribute.String;
-    burs: Schema.Attribute.String;
-    kredi: Schema.Attribute.String;
-    sponsorluk: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesPreInterviewSteps
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview_steps';
-  info: {
-    displayName: 'Pages / Pre Interview / Steps';
-    icon: 'apps';
-  };
-  attributes: {
-    additional: Schema.Attribute.String;
-    education: Schema.Attribute.String;
-    financeVisa: Schema.Attribute.String;
-    language: Schema.Attribute.String;
-    passport: Schema.Attribute.String;
-    personal: Schema.Attribute.String;
-    review: Schema.Attribute.String;
-    target: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesPreInterviewSuccess
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview_success';
-  info: {
-    displayName: 'Pages / Pre Interview / Success';
-    icon: 'apps';
-  };
-  attributes: {
-    description: Schema.Attribute.String;
-    title: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesPreInterviewTargetEducationOptions
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_pre_interview_targe_1oy5mne';
-  info: {
-    displayName: 'Pages / Pre Interview / Target Education Options';
-    icon: 'apps';
-  };
-  attributes: {
-    berufskolleg_ausbildung: Schema.Attribute.String;
-    dil_egitimi: Schema.Attribute.String;
-    kolej_foundation: Schema.Attribute.String;
-    lisans: Schema.Attribute.String;
-    sommer_winter_school: Schema.Attribute.String;
-    yuksek_lisans: Schema.Attribute.String;
-  };
-}
-
 export interface DashboardPagePagesProfile extends Struct.ComponentSchema {
   collectionName: 'components_dashboard_page_pages_profile';
   info: {
@@ -2762,6 +2577,7 @@ export interface HomepageHero extends Struct.ComponentSchema {
     >;
     imageAlt: Schema.Attribute.String;
     scrollLabel: Schema.Attribute.String;
+    slides: Schema.Attribute.Component<'homepage.hero-slide', true>;
     stats: Schema.Attribute.Component<'homepage.hero-stats', true>;
     titleEnd: Schema.Attribute.String;
     titleHighlight: Schema.Attribute.String;
@@ -2779,6 +2595,27 @@ export interface HomepageHeroFloatingCards extends Struct.ComponentSchema {
   attributes: {
     badge: Schema.Attribute.String;
     label: Schema.Attribute.String;
+  };
+}
+
+export interface HomepageHeroSlide extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_hero_slides';
+  info: {
+    displayName: 'Hero Slide';
+    icon: 'slideshow';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    bgImage: Schema.Attribute.Media;
+    ctaPrimary: Schema.Attribute.String;
+    descriptionEmphasis: Schema.Attribute.String;
+    descriptionEnd: Schema.Attribute.String;
+    descriptionStart: Schema.Attribute.String;
+    imageLink: Schema.Attribute.String;
+    mobileImage: Schema.Attribute.Media;
+    titleEnd: Schema.Attribute.String;
+    titleHighlight: Schema.Attribute.String;
+    titleStart: Schema.Attribute.String;
   };
 }
 
@@ -3171,6 +3008,144 @@ export interface MetadataSuccessStories extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.String;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface OnboardingPageOnboardingEducationOptions
+  extends Struct.ComponentSchema {
+  collectionName: 'components_onboarding_page_onboarding_education_options';
+  info: {
+    displayName: 'Onboarding / Education Options';
+    icon: 'apps';
+  };
+  attributes: {
+    lise_mezunu: Schema.Attribute.String;
+    lise_ogrencisi: Schema.Attribute.String;
+    universite_mezunu: Schema.Attribute.String;
+    universite_ogrencisi: Schema.Attribute.String;
+    yuksek_lisans: Schema.Attribute.String;
+  };
+}
+
+export interface OnboardingPageOnboardingErrors extends Struct.ComponentSchema {
+  collectionName: 'components_onboarding_page_onboarding_errors';
+  info: {
+    displayName: 'Onboarding / Errors';
+    icon: 'apps';
+  };
+  attributes: {
+    consentRequired: Schema.Attribute.String;
+    requiredFields: Schema.Attribute.String;
+    submitFailed: Schema.Attribute.String;
+  };
+}
+
+export interface OnboardingPageOnboardingFields extends Struct.ComponentSchema {
+  collectionName: 'components_onboarding_page_onboarding_fields';
+  info: {
+    displayName: 'Onboarding / Fields';
+    icon: 'apps';
+  };
+  attributes: {
+    birthDate: Schema.Attribute.String;
+    certificates: Schema.Attribute.String;
+    certificatesPlaceholder: Schema.Attribute.String;
+    city: Schema.Attribute.String;
+    consentText: Schema.Attribute.String;
+    country: Schema.Attribute.String;
+    currentVisaProcess: Schema.Attribute.String;
+    department: Schema.Attribute.String;
+    educationStatus: Schema.Attribute.String;
+    email: Schema.Attribute.String;
+    englishLevel: Schema.Attribute.String;
+    expectations: Schema.Attribute.String;
+    firstName: Schema.Attribute.String;
+    fundingSource: Schema.Attribute.String;
+    germanLevel: Schema.Attribute.String;
+    gpa: Schema.Attribute.String;
+    graduationYear: Schema.Attribute.String;
+    hasGreenPassport: Schema.Attribute.String;
+    lastName: Schema.Attribute.String;
+    monthlyBudget: Schema.Attribute.String;
+    nationality: Schema.Attribute.String;
+    notes: Schema.Attribute.String;
+    passportValidity: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    previousAbroadExperience: Schema.Attribute.String;
+    previousVisaApplication: Schema.Attribute.String;
+    schengen90DaysUsed: Schema.Attribute.String;
+    schengenEntry: Schema.Attribute.String;
+    school: Schema.Attribute.String;
+    targetCountry: Schema.Attribute.String;
+    targetEducationType: Schema.Attribute.String;
+    targetField: Schema.Attribute.String;
+    targetStartDate: Schema.Attribute.String;
+    visaRejectionReason: Schema.Attribute.String;
+  };
+}
+
+export interface OnboardingPageOnboardingFundingOptions
+  extends Struct.ComponentSchema {
+  collectionName: 'components_onboarding_page_onboarding_funding_options';
+  info: {
+    displayName: 'Onboarding / Funding Options';
+    icon: 'apps';
+  };
+  attributes: {
+    aile_destegi: Schema.Attribute.String;
+    burs: Schema.Attribute.String;
+    kredi: Schema.Attribute.String;
+    sponsorluk: Schema.Attribute.String;
+  };
+}
+
+export interface OnboardingPageOnboardingSteps extends Struct.ComponentSchema {
+  collectionName: 'components_onboarding_page_onboarding_steps';
+  info: {
+    displayName: 'Onboarding / Steps';
+    icon: 'apps';
+  };
+  attributes: {
+    additional: Schema.Attribute.String;
+    education: Schema.Attribute.String;
+    financeVisa: Schema.Attribute.String;
+    language: Schema.Attribute.String;
+    passport: Schema.Attribute.String;
+    personal: Schema.Attribute.String;
+    review: Schema.Attribute.String;
+    target: Schema.Attribute.String;
+  };
+}
+
+export interface OnboardingPageOnboardingSuccess
+  extends Struct.ComponentSchema {
+  collectionName: 'components_onboarding_page_onboarding_success';
+  info: {
+    displayName: 'Onboarding / Success';
+    icon: 'apps';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface OnboardingPageOnboardingTargetEducationOptions
+  extends Struct.ComponentSchema {
+  collectionName: 'components_onboarding_page_onboarding_target_education_options';
+  info: {
+    displayName: 'Onboarding / Target Education Options';
+    icon: 'apps';
+  };
+  attributes: {
+    almanca_kursu_a1_a2: Schema.Attribute.String;
+    almanca_kursu_b1_b2: Schema.Attribute.String;
+    berufskolleg_ausbildung: Schema.Attribute.String;
+    dil_egitimi: Schema.Attribute.String;
+    kolej_foundation: Schema.Attribute.String;
+    lisans: Schema.Attribute.String;
+    sommer_winter_school: Schema.Attribute.String;
+    yuksek_lisans: Schema.Attribute.String;
   };
 }
 
@@ -3713,14 +3688,6 @@ declare module '@strapi/strapi' {
       'dashboard-page.pages-payments-filters': DashboardPagePagesPaymentsFilters;
       'dashboard-page.pages-payments-modal': DashboardPagePagesPaymentsModal;
       'dashboard-page.pages-payments-statuses': DashboardPagePagesPaymentsStatuses;
-      'dashboard-page.pages-pre-interview': DashboardPagePagesPreInterview;
-      'dashboard-page.pages-pre-interview-education-options': DashboardPagePagesPreInterviewEducationOptions;
-      'dashboard-page.pages-pre-interview-errors': DashboardPagePagesPreInterviewErrors;
-      'dashboard-page.pages-pre-interview-fields': DashboardPagePagesPreInterviewFields;
-      'dashboard-page.pages-pre-interview-funding-options': DashboardPagePagesPreInterviewFundingOptions;
-      'dashboard-page.pages-pre-interview-steps': DashboardPagePagesPreInterviewSteps;
-      'dashboard-page.pages-pre-interview-success': DashboardPagePagesPreInterviewSuccess;
-      'dashboard-page.pages-pre-interview-target-education-options': DashboardPagePagesPreInterviewTargetEducationOptions;
       'dashboard-page.pages-profile': DashboardPagePagesProfile;
       'dashboard-page.pages-profile-biometric-photo': DashboardPagePagesProfileBiometricPhoto;
       'dashboard-page.pages-profile-buttons': DashboardPagePagesProfileButtons;
@@ -3756,6 +3723,7 @@ declare module '@strapi/strapi' {
       'homepage.destinations-item': HomepageDestinationsItem;
       'homepage.hero': HomepageHero;
       'homepage.hero-floating-cards': HomepageHeroFloatingCards;
+      'homepage.hero-slide': HomepageHeroSlide;
       'homepage.hero-stats': HomepageHeroStats;
       'homepage.how-to-work': HomepageHowToWork;
       'homepage.how-to-work-steps': HomepageHowToWorkSteps;
@@ -3786,6 +3754,13 @@ declare module '@strapi/strapi' {
       'metadata.pricing': MetadataPricing;
       'metadata.services': MetadataServices;
       'metadata.success-stories': MetadataSuccessStories;
+      'onboarding-page.onboarding-education-options': OnboardingPageOnboardingEducationOptions;
+      'onboarding-page.onboarding-errors': OnboardingPageOnboardingErrors;
+      'onboarding-page.onboarding-fields': OnboardingPageOnboardingFields;
+      'onboarding-page.onboarding-funding-options': OnboardingPageOnboardingFundingOptions;
+      'onboarding-page.onboarding-steps': OnboardingPageOnboardingSteps;
+      'onboarding-page.onboarding-success': OnboardingPageOnboardingSuccess;
+      'onboarding-page.onboarding-target-education-options': OnboardingPageOnboardingTargetEducationOptions;
       'pricing-page.basic': PricingPageBasic;
       'pricing-page.package': PricingPagePackage;
       'pricing-page.premium': PricingPagePremium;

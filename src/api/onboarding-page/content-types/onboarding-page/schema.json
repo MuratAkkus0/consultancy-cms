@@ -1,0 +1,121 @@
+{
+  "kind": "singleType",
+  "collectionName": "onboarding_pages",
+  "info": {
+    "singularName": "onboarding-page",
+    "pluralName": "onboarding-pages",
+    "displayName": "onboarding-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subtitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "submitting": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "submit": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "success": {
+      "type": "component",
+      "repeatable": false,
+      "component": "onboarding-page.onboarding-success",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "errors": {
+      "type": "component",
+      "repeatable": false,
+      "component": "onboarding-page.onboarding-errors",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": false,
+      "component": "onboarding-page.onboarding-steps",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "fields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "onboarding-page.onboarding-fields",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "educationOptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "onboarding-page.onboarding-education-options",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "targetEducationOptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "onboarding-page.onboarding-target-education-options",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "fundingOptions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "onboarding-page.onboarding-funding-options",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

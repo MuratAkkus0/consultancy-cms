@@ -32,6 +32,11 @@
       "repeatable": true,
       "component": "homepage.hero-stats"
     },
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.hero-slide"
+    },
     "ctaPrimary": {
       "type": "string"
     },

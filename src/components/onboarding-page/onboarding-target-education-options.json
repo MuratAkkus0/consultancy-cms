@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_dashboard_page_pages_pre_interview_targe_1oy5mne",
+  "collectionName": "components_onboarding_page_onboarding_target_education_options",
   "info": {
-    "displayName": "Pages / Pre Interview / Target Education Options",
+    "displayName": "Onboarding / Target Education Options",
     "icon": "apps"
   },
   "options": {},
@@ -22,6 +22,12 @@
       "type": "string"
     },
     "sommer_winter_school": {
+      "type": "string"
+    },
+    "almanca_kursu_a1_a2": {
+      "type": "string"
+    },
+    "almanca_kursu_b1_b2": {
       "type": "string"
     }
   }

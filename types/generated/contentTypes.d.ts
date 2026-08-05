@@ -1881,6 +1881,125 @@ export interface ApiMetadataMetadata extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiOnboardingPageOnboardingPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'onboarding_pages';
+  info: {
+    displayName: 'onboarding-page';
+    pluralName: 'onboarding-pages';
+    singularName: 'onboarding-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    educationOptions: Schema.Attribute.Component<
+      'onboarding-page.onboarding-education-options',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    errors: Schema.Attribute.Component<
+      'onboarding-page.onboarding-errors',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    fields: Schema.Attribute.Component<
+      'onboarding-page.onboarding-fields',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    fundingOptions: Schema.Attribute.Component<
+      'onboarding-page.onboarding-funding-options',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::onboarding-page.onboarding-page'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    steps: Schema.Attribute.Component<
+      'onboarding-page.onboarding-steps',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    submit: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    submitting: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    subtitle: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    success: Schema.Attribute.Component<
+      'onboarding-page.onboarding-success',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    targetEducationOptions: Schema.Attribute.Component<
+      'onboarding-page.onboarding-target-education-options',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPricingPagePricingPage extends Struct.SingleTypeSchema {
   collectionName: 'pricing_pages';
   info: {
@@ -2745,6 +2864,7 @@ declare module '@strapi/strapi' {
       'api::impressum.impressum': ApiImpressumImpressum;
       'api::kassenbuch-page.kassenbuch-page': ApiKassenbuchPageKassenbuchPage;
       'api::metadata.metadata': ApiMetadataMetadata;
+      'api::onboarding-page.onboarding-page': ApiOnboardingPageOnboardingPage;
       'api::pricing-page.pricing-page': ApiPricingPagePricingPage;
       'api::routing-page.routing-page': ApiRoutingPageRoutingPage;
       'api::services-page.services-page': ApiServicesPageServicesPage;

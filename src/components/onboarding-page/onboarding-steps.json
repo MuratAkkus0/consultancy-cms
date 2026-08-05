@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_dashboard_page_pages_pre_interview_steps",
+  "collectionName": "components_onboarding_page_onboarding_steps",
   "info": {
-    "displayName": "Pages / Pre Interview / Steps",
+    "displayName": "Onboarding / Steps",
     "icon": "apps"
   },
   "options": {},

@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_homepage_hero_slides",
+  "info": {
+    "displayName": "Hero Slide",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "titleStart": {
+      "type": "string"
+    },
+    "titleHighlight": {
+      "type": "string"
+    },
+    "titleEnd": {
+      "type": "string"
+    },
+    "descriptionStart": {
+      "type": "string"
+    },
+    "descriptionEmphasis": {
+      "type": "string"
+    },
+    "descriptionEnd": {
+      "type": "string"
+    },
+    "ctaPrimary": {
+      "type": "string"
+    },
+    "imageLink": {
+      "type": "string"
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowed_types": ["images"]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowed_types": ["images"]
+    }
+  }
+}

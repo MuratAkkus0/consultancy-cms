@@ -654,86 +654,6 @@ export interface DashboardPageGroups extends Struct.ComponentSchema {
   };
 }
 
-export interface DashboardPagePages extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages';
-  info: {
-    displayName: 'Pages';
-    icon: 'apps';
-  };
-  attributes: {
-    adminAdvisors: Schema.Attribute.Component<
-      'dashboard-page.pages-admin-advisors',
-      false
-    >;
-    adminAssignments: Schema.Attribute.Component<
-      'dashboard-page.pages-admin-assignments',
-      false
-    >;
-    adminOverview: Schema.Attribute.Component<
-      'dashboard-page.pages-admin-overview',
-      false
-    >;
-    adminPayments: Schema.Attribute.Component<
-      'dashboard-page.pages-admin-payments',
-      false
-    >;
-    adminStudents: Schema.Attribute.Component<
-      'dashboard-page.pages-admin-students',
-      false
-    >;
-    advisorAppointments: Schema.Attribute.Component<
-      'dashboard-page.pages-advisor-appointments',
-      false
-    >;
-    advisorMessages: Schema.Attribute.Component<
-      'dashboard-page.pages-advisor-messages',
-      false
-    >;
-    advisorOverview: Schema.Attribute.Component<
-      'dashboard-page.pages-advisor-overview',
-      false
-    >;
-    advisorStudentDetail: Schema.Attribute.Component<
-      'dashboard-page.pages-advisor-student-detail',
-      false
-    >;
-    advisorStudents: Schema.Attribute.Component<
-      'dashboard-page.pages-advisor-students',
-      false
-    >;
-    applications: Schema.Attribute.Component<
-      'dashboard-page.pages-applications',
-      false
-    >;
-    appointments: Schema.Attribute.Component<
-      'dashboard-page.pages-appointments',
-      false
-    >;
-    courses: Schema.Attribute.Component<'dashboard-page.pages-courses', false>;
-    documents: Schema.Attribute.Component<
-      'dashboard-page.pages-documents',
-      false
-    >;
-    kassenbuch: Schema.Attribute.Component<
-      'dashboard-page.pages-kassenbuch',
-      false
-    >;
-    messages: Schema.Attribute.Component<
-      'dashboard-page.pages-messages',
-      false
-    >;
-    overview: Schema.Attribute.Component<
-      'dashboard-page.pages-overview',
-      false
-    >;
-    payments: Schema.Attribute.Component<
-      'dashboard-page.pages-payments',
-      false
-    >;
-    profile: Schema.Attribute.Component<'dashboard-page.pages-profile', false>;
-  };
-}
-
 export interface DashboardPagePagesAdminAdvisors
   extends Struct.ComponentSchema {
   collectionName: 'components_dashboard_page_pages_admin_advisors';
@@ -787,43 +707,6 @@ export interface DashboardPagePagesAdminAdvisorsCreate
     submitting: Schema.Attribute.String;
     title: Schema.Attribute.String;
     titlePlaceholder: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesAdminAssignments
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_admin_assignments';
-  info: {
-    displayName: 'Pages / Admin Assignments';
-    icon: 'apps';
-  };
-  attributes: {
-    allAssigned: Schema.Attribute.String;
-    assign: Schema.Attribute.String;
-    confirmMessage: Schema.Attribute.String;
-    confirmTitle: Schema.Attribute.String;
-    description: Schema.Attribute.String;
-    table: Schema.Attribute.Component<
-      'dashboard-page.pages-admin-assignments-table',
-      false
-    >;
-    title: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesAdminAssignmentsTable
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_admin_assignments_table';
-  info: {
-    displayName: 'Pages / Admin Assignments / Table';
-    icon: 'apps';
-  };
-  attributes: {
-    action: Schema.Attribute.String;
-    assignTo: Schema.Attribute.String;
-    email: Schema.Attribute.String;
-    student: Schema.Attribute.String;
-    target: Schema.Attribute.String;
   };
 }
 
@@ -963,26 +846,6 @@ export interface DashboardPagePagesAdvisorAppointments
     noAppointments: Schema.Attribute.String;
     title: Schema.Attribute.String;
     withStudent: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesAdvisorMessages
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_advisor_messages';
-  info: {
-    displayName: 'Pages / Advisor Messages';
-    icon: 'apps';
-  };
-  attributes: {
-    inbox: Schema.Attribute.String;
-    messagePlaceholder: Schema.Attribute.String;
-    new: Schema.Attribute.String;
-    noActiveChatDesc: Schema.Attribute.String;
-    noActiveChatTitle: Schema.Attribute.String;
-    noChats: Schema.Attribute.String;
-    offline: Schema.Attribute.String;
-    online: Schema.Attribute.String;
-    searchPlaceholder: Schema.Attribute.String;
   };
 }
 
@@ -1754,88 +1617,6 @@ export interface DashboardPagePagesDocumentsUpload
   };
 }
 
-export interface DashboardPagePagesKassenbuch extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_kassenbuch';
-  info: {
-    displayName: 'Pages / Kassenbuch';
-    icon: 'apps';
-  };
-  attributes: {
-    addEntry: Schema.Attribute.String;
-    allPeriod: Schema.Attribute.String;
-    allYear: Schema.Attribute.String;
-    amount: Schema.Attribute.String;
-    amountPlaceholder: Schema.Attribute.String;
-    balance: Schema.Attribute.String;
-    cancel: Schema.Attribute.String;
-    currency: Schema.Attribute.String;
-    date: Schema.Attribute.String;
-    datePlaceholder: Schema.Attribute.String;
-    delete: Schema.Attribute.String;
-    description: Schema.Attribute.String;
-    descriptionField: Schema.Attribute.String;
-    descriptionPlaceholder: Schema.Attribute.String;
-    downloadReport: Schema.Attribute.String;
-    edit: Schema.Attribute.String;
-    expense: Schema.Attribute.String;
-    file: Schema.Attribute.String;
-    fileAccept: Schema.Attribute.String;
-    income: Schema.Attribute.String;
-    invoiceFile: Schema.Attribute.String;
-    modalTitle: Schema.Attribute.String;
-    monthly: Schema.Attribute.String;
-    newEntry: Schema.Attribute.String;
-    noEntries: Schema.Attribute.String;
-    noEntriesDesc: Schema.Attribute.String;
-    period: Schema.Attribute.String;
-    save: Schema.Attribute.String;
-    title: Schema.Attribute.String;
-    titleField: Schema.Attribute.String;
-    titlePlaceholder: Schema.Attribute.String;
-    totalExpense: Schema.Attribute.String;
-    totalIncome: Schema.Attribute.String;
-    type: Schema.Attribute.String;
-    typePlaceholder: Schema.Attribute.String;
-    yearly: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesMessages extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_messages';
-  info: {
-    displayName: 'Pages / Messages';
-    icon: 'apps';
-  };
-  attributes: {
-    advisor: Schema.Attribute.String;
-    description: Schema.Attribute.String;
-    inbox: Schema.Attribute.String;
-    messagePlaceholder: Schema.Attribute.String;
-    new: Schema.Attribute.String;
-    noActiveChatDesc: Schema.Attribute.String;
-    noActiveChatTitle: Schema.Attribute.String;
-    noChats: Schema.Attribute.String;
-    offline: Schema.Attribute.String;
-    online: Schema.Attribute.String;
-    searchPlaceholder: Schema.Attribute.String;
-    title: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesOverview extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_overview';
-  info: {
-    displayName: 'Pages / Overview';
-    icon: 'apps';
-  };
-  attributes: {
-    advisor: Schema.Attribute.Component<
-      'dashboard-page.pages-overview-advisor',
-      false
-    >;
-  };
-}
-
 export interface DashboardPagePagesOverviewAdvisor
   extends Struct.ComponentSchema {
   collectionName: 'components_dashboard_page_pages_overview_advisor';
@@ -1946,260 +1727,6 @@ export interface DashboardPagePagesPaymentsStatuses
     paid: Schema.Attribute.String;
     pending: Schema.Attribute.String;
     refunded: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfile extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile';
-  info: {
-    displayName: 'Pages / Profile';
-    icon: 'apps';
-  };
-  attributes: {
-    biometricPhoto: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-biometric-photo',
-      false
-    >;
-    buttons: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-buttons',
-      false
-    >;
-    cv: Schema.Attribute.Component<'dashboard-page.pages-profile-cv', false>;
-    description: Schema.Attribute.String;
-    fields: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-fields',
-      false
-    >;
-    options: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-options',
-      false
-    >;
-    placeholders: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-placeholders',
-      false
-    >;
-    sections: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-sections',
-      false
-    >;
-    tabs: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-tabs',
-      false
-    >;
-    title: Schema.Attribute.String;
-    validation: Schema.Attribute.Component<
-      'dashboard-page.pages-profile-validation',
-      false
-    >;
-  };
-}
-
-export interface DashboardPagePagesProfileBiometricPhoto
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_biometric_photo';
-  info: {
-    displayName: 'Pages / Profile / Biometric Photo';
-    icon: 'apps';
-  };
-  attributes: {
-    change: Schema.Attribute.String;
-    instruction: Schema.Attribute.String;
-    label: Schema.Attribute.String;
-    noPhoto: Schema.Attribute.String;
-    purpose: Schema.Attribute.String;
-    sizeError: Schema.Attribute.String;
-    specs: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfileButtons
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_buttons';
-  info: {
-    displayName: 'Pages / Profile / Buttons';
-    icon: 'apps';
-  };
-  attributes: {
-    add: Schema.Attribute.String;
-    change: Schema.Attribute.String;
-    downloadPdf: Schema.Attribute.String;
-    save: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfileCv extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_cv';
-  info: {
-    displayName: 'Pages / Profile / CV';
-    icon: 'apps';
-  };
-  attributes: {
-    birth: Schema.Attribute.String;
-    certificates: Schema.Attribute.String;
-    contact: Schema.Attribute.String;
-    education: Schema.Attribute.String;
-    experience: Schema.Attribute.String;
-    languages: Schema.Attribute.String;
-    maritalStatus: Schema.Attribute.String;
-    nationality: Schema.Attribute.String;
-    ongoing: Schema.Attribute.String;
-    personalInfo: Schema.Attribute.String;
-    skills: Schema.Attribute.String;
-    summary: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfileFields
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_fields';
-  info: {
-    displayName: 'Pages / Profile / Fields';
-    icon: 'apps';
-  };
-  attributes: {
-    address: Schema.Attribute.String;
-    birthDate: Schema.Attribute.String;
-    birthPlace: Schema.Attribute.String;
-    certificateName: Schema.Attribute.String;
-    company: Schema.Attribute.String;
-    degree: Schema.Attribute.String;
-    department: Schema.Attribute.String;
-    description: Schema.Attribute.String;
-    driversLicense: Schema.Attribute.String;
-    email: Schema.Attribute.String;
-    endDate: Schema.Attribute.String;
-    firstName: Schema.Attribute.String;
-    gender: Schema.Attribute.String;
-    github: Schema.Attribute.String;
-    gpa: Schema.Attribute.String;
-    issuingOrganization: Schema.Attribute.String;
-    languageName: Schema.Attribute.String;
-    lastName: Schema.Attribute.String;
-    level: Schema.Attribute.String;
-    linkedin: Schema.Attribute.String;
-    location: Schema.Attribute.String;
-    maritalStatus: Schema.Attribute.String;
-    nationality: Schema.Attribute.String;
-    ongoing: Schema.Attribute.String;
-    organization: Schema.Attribute.String;
-    phone: Schema.Attribute.String;
-    position: Schema.Attribute.String;
-    preferredLanguage: Schema.Attribute.String;
-    professionalSummary: Schema.Attribute.String;
-    referenceName: Schema.Attribute.String;
-    responsibilities: Schema.Attribute.String;
-    school: Schema.Attribute.String;
-    scoreDate: Schema.Attribute.String;
-    skillName: Schema.Attribute.String;
-    startDate: Schema.Attribute.String;
-    title: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfileOptions
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_options';
-  info: {
-    displayName: 'Pages / Profile / Options';
-    icon: 'apps';
-  };
-  attributes: {
-    degreeAssociates: Schema.Attribute.String;
-    degreeBachelors: Schema.Attribute.String;
-    degreeHighSchool: Schema.Attribute.String;
-    degreeMasters: Schema.Attribute.String;
-    degreePhd: Schema.Attribute.String;
-    english: Schema.Attribute.String;
-    female: Schema.Attribute.String;
-    german: Schema.Attribute.String;
-    languageA1: Schema.Attribute.String;
-    languageA2: Schema.Attribute.String;
-    languageB1: Schema.Attribute.String;
-    languageB2: Schema.Attribute.String;
-    languageC1: Schema.Attribute.String;
-    languageC2: Schema.Attribute.String;
-    male: Schema.Attribute.String;
-    maritalStatusMarried: Schema.Attribute.String;
-    maritalStatusSingle: Schema.Attribute.String;
-    preferNotToSay: Schema.Attribute.String;
-    selectGender: Schema.Attribute.String;
-    selectLanguage: Schema.Attribute.String;
-    turkish: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfilePlaceholders
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_placeholders';
-  info: {
-    displayName: 'Pages / Profile / Placeholders';
-    icon: 'apps';
-  };
-  attributes: {
-    certificateName: Schema.Attribute.String;
-    company: Schema.Attribute.String;
-    department: Schema.Attribute.String;
-    gpa: Schema.Attribute.String;
-    languageName: Schema.Attribute.String;
-    location: Schema.Attribute.String;
-    position: Schema.Attribute.String;
-    referenceName: Schema.Attribute.String;
-    responsibilities: Schema.Attribute.String;
-    school: Schema.Attribute.String;
-    scoreDate: Schema.Attribute.String;
-    skillName: Schema.Attribute.String;
-    summary: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfileSections
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_sections';
-  info: {
-    displayName: 'Pages / Profile / Sections';
-    icon: 'apps';
-  };
-  attributes: {
-    certificates: Schema.Attribute.String;
-    education: Schema.Attribute.String;
-    experience: Schema.Attribute.String;
-    languages: Schema.Attribute.String;
-    personalInfo: Schema.Attribute.String;
-    references: Schema.Attribute.String;
-    skills: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfileTabs extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_tabs';
-  info: {
-    displayName: 'Pages / Profile / Tabs';
-    icon: 'apps';
-  };
-  attributes: {
-    certificates: Schema.Attribute.String;
-    education: Schema.Attribute.String;
-    experience: Schema.Attribute.String;
-    languages: Schema.Attribute.String;
-    personal: Schema.Attribute.String;
-    preview: Schema.Attribute.String;
-    references: Schema.Attribute.String;
-    skills: Schema.Attribute.String;
-  };
-}
-
-export interface DashboardPagePagesProfileValidation
-  extends Struct.ComponentSchema {
-  collectionName: 'components_dashboard_page_pages_profile_validation';
-  info: {
-    displayName: 'Pages / Profile / Validation';
-    icon: 'apps';
-  };
-  attributes: {
-    pdfError: Schema.Attribute.String;
-    pdfUnknownError: Schema.Attribute.String;
-    photoSizeError: Schema.Attribute.String;
-    saveSuccess: Schema.Attribute.String;
   };
 }
 
@@ -3244,6 +2771,311 @@ export interface PricingPageWhyUs extends Struct.ComponentSchema {
   };
 }
 
+export interface ProfilePageAccount extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_account';
+  info: {
+    displayName: 'Profile / Account';
+    icon: 'apps';
+  };
+  attributes: {
+    dataProcessing: Schema.Attribute.String;
+    dataProcessingApproved: Schema.Attribute.String;
+    emailVerified: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    memberSince: Schema.Attribute.String;
+    status: Schema.Attribute.String;
+    timezone: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageBiometricPhoto extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_biometric_photo';
+  info: {
+    displayName: 'Profile / Biometric Photo';
+    icon: 'apps';
+  };
+  attributes: {
+    change: Schema.Attribute.String;
+    instruction: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+    noPhoto: Schema.Attribute.String;
+    purpose: Schema.Attribute.String;
+    sizeError: Schema.Attribute.String;
+    specs: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageButtons extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_buttons';
+  info: {
+    displayName: 'Profile / Buttons';
+    icon: 'apps';
+  };
+  attributes: {
+    add: Schema.Attribute.String;
+    change: Schema.Attribute.String;
+    downloadPdf: Schema.Attribute.String;
+    save: Schema.Attribute.String;
+    saving: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageCv extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_cv';
+  info: {
+    displayName: 'Profile / CV';
+    icon: 'apps';
+  };
+  attributes: {
+    birth: Schema.Attribute.String;
+    certificates: Schema.Attribute.String;
+    contact: Schema.Attribute.String;
+    education: Schema.Attribute.String;
+    experience: Schema.Attribute.String;
+    languages: Schema.Attribute.String;
+    maritalStatus: Schema.Attribute.String;
+    nationality: Schema.Attribute.String;
+    ongoing: Schema.Attribute.String;
+    personalInfo: Schema.Attribute.String;
+    skills: Schema.Attribute.String;
+    summary: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageFields extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_fields';
+  info: {
+    displayName: 'Profile / Fields';
+    icon: 'apps';
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    birthDate: Schema.Attribute.String;
+    birthPlace: Schema.Attribute.String;
+    certificateName: Schema.Attribute.String;
+    cityOfResidence: Schema.Attribute.String;
+    company: Schema.Attribute.String;
+    countryOfResidence: Schema.Attribute.String;
+    current: Schema.Attribute.String;
+    currentEducationLevel: Schema.Attribute.String;
+    date: Schema.Attribute.String;
+    degree: Schema.Attribute.String;
+    department: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    driversLicense: Schema.Attribute.String;
+    email: Schema.Attribute.String;
+    endDate: Schema.Attribute.String;
+    firstName: Schema.Attribute.String;
+    gender: Schema.Attribute.String;
+    github: Schema.Attribute.String;
+    gpa: Schema.Attribute.String;
+    issuingOrganization: Schema.Attribute.String;
+    languageName: Schema.Attribute.String;
+    lastName: Schema.Attribute.String;
+    level: Schema.Attribute.String;
+    linkedin: Schema.Attribute.String;
+    location: Schema.Attribute.String;
+    maritalStatus: Schema.Attribute.String;
+    nationality: Schema.Attribute.String;
+    ongoing: Schema.Attribute.String;
+    organization: Schema.Attribute.String;
+    passportNumber: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    portfolio: Schema.Attribute.String;
+    position: Schema.Attribute.String;
+    preferredLanguage: Schema.Attribute.String;
+    professionalSummary: Schema.Attribute.String;
+    referenceName: Schema.Attribute.String;
+    responsibilities: Schema.Attribute.String;
+    school: Schema.Attribute.String;
+    scoreDate: Schema.Attribute.String;
+    skillName: Schema.Attribute.String;
+    startDate: Schema.Attribute.String;
+    targetEducationLevel: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageOptions extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_options';
+  info: {
+    displayName: 'Profile / Options';
+    icon: 'apps';
+  };
+  attributes: {
+    degreeAssociates: Schema.Attribute.String;
+    degreeBachelors: Schema.Attribute.String;
+    degreeHighSchool: Schema.Attribute.String;
+    degreeMasters: Schema.Attribute.String;
+    degreePhd: Schema.Attribute.String;
+    english: Schema.Attribute.String;
+    female: Schema.Attribute.String;
+    german: Schema.Attribute.String;
+    languageA1: Schema.Attribute.String;
+    languageA2: Schema.Attribute.String;
+    languageB1: Schema.Attribute.String;
+    languageB2: Schema.Attribute.String;
+    languageC1: Schema.Attribute.String;
+    languageC2: Schema.Attribute.String;
+    male: Schema.Attribute.String;
+    maritalStatusMarried: Schema.Attribute.String;
+    maritalStatusSingle: Schema.Attribute.String;
+    no: Schema.Attribute.String;
+    preferNotToSay: Schema.Attribute.String;
+    selectGender: Schema.Attribute.String;
+    selectLanguage: Schema.Attribute.String;
+    turkish: Schema.Attribute.String;
+    yes: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePagePlaceholders extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_placeholders';
+  info: {
+    displayName: 'Profile / Placeholders';
+    icon: 'apps';
+  };
+  attributes: {
+    certificateName: Schema.Attribute.String;
+    company: Schema.Attribute.String;
+    department: Schema.Attribute.String;
+    github: Schema.Attribute.String;
+    gpa: Schema.Attribute.String;
+    languageName: Schema.Attribute.String;
+    linkedin: Schema.Attribute.String;
+    location: Schema.Attribute.String;
+    position: Schema.Attribute.String;
+    referenceName: Schema.Attribute.String;
+    responsibilities: Schema.Attribute.String;
+    school: Schema.Attribute.String;
+    scoreDate: Schema.Attribute.String;
+    skillName: Schema.Attribute.String;
+    summary: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageSections extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_sections';
+  info: {
+    displayName: 'Profile / Sections';
+    icon: 'apps';
+  };
+  attributes: {
+    certificates: Schema.Attribute.String;
+    education: Schema.Attribute.String;
+    experience: Schema.Attribute.String;
+    languages: Schema.Attribute.String;
+    personal: Schema.Attribute.String;
+    personalInfo: Schema.Attribute.String;
+    references: Schema.Attribute.String;
+    skills: Schema.Attribute.String;
+    targetPrograms: Schema.Attribute.String;
+    visa: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageStatus extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_status';
+  info: {
+    displayName: 'Profile / Status';
+    icon: 'apps';
+  };
+  attributes: {
+    active: Schema.Attribute.String;
+    inactive: Schema.Attribute.String;
+    suspended: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageTabs extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_tabs';
+  info: {
+    displayName: 'Profile / Tabs';
+    icon: 'apps';
+  };
+  attributes: {
+    certificates: Schema.Attribute.String;
+    education: Schema.Attribute.String;
+    experience: Schema.Attribute.String;
+    languages: Schema.Attribute.String;
+    personal: Schema.Attribute.String;
+    preview: Schema.Attribute.String;
+    references: Schema.Attribute.String;
+    skills: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageTarget extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_target';
+  info: {
+    displayName: 'Profile / Target';
+    icon: 'apps';
+  };
+  attributes: {
+    budgetRange: Schema.Attribute.String;
+    financeSource: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    preferredStartDate: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageTargetProgram extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_target_program';
+  info: {
+    displayName: 'Profile / Target Program';
+    icon: 'apps';
+  };
+  attributes: {
+    country: Schema.Attribute.String;
+    degree: Schema.Attribute.String;
+    intakeTerm: Schema.Attribute.String;
+    program: Schema.Attribute.String;
+    university: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageValidation extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_validation';
+  info: {
+    displayName: 'Profile / Validation';
+    icon: 'apps';
+  };
+  attributes: {
+    entryNumber: Schema.Attribute.String;
+    fieldRequired: Schema.Attribute.String;
+    invalidUrl: Schema.Attribute.String;
+    invalidValue: Schema.Attribute.String;
+    pdfError: Schema.Attribute.String;
+    pdfUnknownError: Schema.Attribute.String;
+    photoSizeError: Schema.Attribute.String;
+    saveFailed: Schema.Attribute.String;
+    saveSuccess: Schema.Attribute.String;
+    selectOption: Schema.Attribute.String;
+  };
+}
+
+export interface ProfilePageVisa extends Struct.ComponentSchema {
+  collectionName: 'components_profile_page_visa';
+  info: {
+    displayName: 'Profile / Visa';
+    icon: 'apps';
+  };
+  attributes: {
+    appliedBefore: Schema.Attribute.String;
+    currentlyInProcess: Schema.Attribute.String;
+    greenPassport: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    history: Schema.Attribute.String;
+    lastSchengenEntryDate: Schema.Attribute.String;
+    passportValidity: Schema.Attribute.String;
+    previousAbroadExperience: Schema.Attribute.String;
+    schengen90DaysUsed: Schema.Attribute.String;
+    schengenEntry: Schema.Attribute.String;
+    visaRejectionReason: Schema.Attribute.String;
+  };
+}
+
 export interface RoutingPageCommon extends Struct.ComponentSchema {
   collectionName: 'components_routing_page_common';
   info: {
@@ -3627,11 +3459,8 @@ declare module '@strapi/strapi' {
       'contact-page.info-social': ContactPageInfoSocial;
       'contact-page.map': ContactPageMap;
       'dashboard-page.groups': DashboardPageGroups;
-      'dashboard-page.pages': DashboardPagePages;
       'dashboard-page.pages-admin-advisors': DashboardPagePagesAdminAdvisors;
       'dashboard-page.pages-admin-advisors-create': DashboardPagePagesAdminAdvisorsCreate;
-      'dashboard-page.pages-admin-assignments': DashboardPagePagesAdminAssignments;
-      'dashboard-page.pages-admin-assignments-table': DashboardPagePagesAdminAssignmentsTable;
       'dashboard-page.pages-admin-overview': DashboardPagePagesAdminOverview;
       'dashboard-page.pages-admin-payments': DashboardPagePagesAdminPayments;
       'dashboard-page.pages-admin-payments-statuses': DashboardPagePagesAdminPaymentsStatuses;
@@ -3639,7 +3468,6 @@ declare module '@strapi/strapi' {
       'dashboard-page.pages-admin-students': DashboardPagePagesAdminStudents;
       'dashboard-page.pages-admin-students-table': DashboardPagePagesAdminStudentsTable;
       'dashboard-page.pages-advisor-appointments': DashboardPagePagesAdvisorAppointments;
-      'dashboard-page.pages-advisor-messages': DashboardPagePagesAdvisorMessages;
       'dashboard-page.pages-advisor-overview': DashboardPagePagesAdvisorOverview;
       'dashboard-page.pages-advisor-overview-application-status-labels': DashboardPagePagesAdvisorOverviewApplicationStatusLabels;
       'dashboard-page.pages-advisor-overview-appointment-types': DashboardPagePagesAdvisorOverviewAppointmentTypes;
@@ -3679,25 +3507,12 @@ declare module '@strapi/strapi' {
       'dashboard-page.pages-documents-categories': DashboardPagePagesDocumentsCategories;
       'dashboard-page.pages-documents-statuses': DashboardPagePagesDocumentsStatuses;
       'dashboard-page.pages-documents-upload': DashboardPagePagesDocumentsUpload;
-      'dashboard-page.pages-kassenbuch': DashboardPagePagesKassenbuch;
-      'dashboard-page.pages-messages': DashboardPagePagesMessages;
-      'dashboard-page.pages-overview': DashboardPagePagesOverview;
       'dashboard-page.pages-overview-advisor': DashboardPagePagesOverviewAdvisor;
       'dashboard-page.pages-payments': DashboardPagePagesPayments;
       'dashboard-page.pages-payments-card': DashboardPagePagesPaymentsCard;
       'dashboard-page.pages-payments-filters': DashboardPagePagesPaymentsFilters;
       'dashboard-page.pages-payments-modal': DashboardPagePagesPaymentsModal;
       'dashboard-page.pages-payments-statuses': DashboardPagePagesPaymentsStatuses;
-      'dashboard-page.pages-profile': DashboardPagePagesProfile;
-      'dashboard-page.pages-profile-biometric-photo': DashboardPagePagesProfileBiometricPhoto;
-      'dashboard-page.pages-profile-buttons': DashboardPagePagesProfileButtons;
-      'dashboard-page.pages-profile-cv': DashboardPagePagesProfileCv;
-      'dashboard-page.pages-profile-fields': DashboardPagePagesProfileFields;
-      'dashboard-page.pages-profile-options': DashboardPagePagesProfileOptions;
-      'dashboard-page.pages-profile-placeholders': DashboardPagePagesProfilePlaceholders;
-      'dashboard-page.pages-profile-sections': DashboardPagePagesProfileSections;
-      'dashboard-page.pages-profile-tabs': DashboardPagePagesProfileTabs;
-      'dashboard-page.pages-profile-validation': DashboardPagePagesProfileValidation;
       'dashboard-page.routes': DashboardPageRoutes;
       'dashboard-page.sidebar': DashboardPageSidebar;
       'datenschutz.header': DatenschutzHeader;
@@ -3767,6 +3582,20 @@ declare module '@strapi/strapi' {
       'pricing-page.standard': PricingPageStandard;
       'pricing-page.vip': PricingPageVip;
       'pricing-page.why-us': PricingPageWhyUs;
+      'profile-page.account': ProfilePageAccount;
+      'profile-page.biometric-photo': ProfilePageBiometricPhoto;
+      'profile-page.buttons': ProfilePageButtons;
+      'profile-page.cv': ProfilePageCv;
+      'profile-page.fields': ProfilePageFields;
+      'profile-page.options': ProfilePageOptions;
+      'profile-page.placeholders': ProfilePagePlaceholders;
+      'profile-page.sections': ProfilePageSections;
+      'profile-page.status': ProfilePageStatus;
+      'profile-page.tabs': ProfilePageTabs;
+      'profile-page.target': ProfilePageTarget;
+      'profile-page.target-program': ProfilePageTargetProgram;
+      'profile-page.validation': ProfilePageValidation;
+      'profile-page.visa': ProfilePageVisa;
       'routing-page.common': RoutingPageCommon;
       'routing-page.dokumanlar': RoutingPageDokumanlar;
       'routing-page.kullanici-id': RoutingPageKullaniciId;

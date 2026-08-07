@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "dashboard_pages",
+  "collectionName": "payment_page_pages",
   "info": {
-    "singularName": "dashboard-page",
-    "pluralName": "dashboard-pages",
-    "displayName": "dashboard-page"
+    "singularName": "payment-page",
+    "pluralName": "payment-pages",
+    "displayName": "payment-page"
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +23,7 @@
         }
       }
     },
-    "welcome": {
+    "description": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -31,27 +31,37 @@
         }
       }
     },
-    "sidebar": {
+    "filters": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.sidebar",
+      "component": "dashboard-page.pages-payments-filters",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "routes": {
+    "statuses": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.routes",
+      "component": "dashboard-page.pages-payments-statuses",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "quickTip": {
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-payments-card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "empty": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -59,8 +69,10 @@
         }
       }
     },
-    "quickTipText": {
-      "type": "string",
+    "modal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-payments-modal",
       "pluginOptions": {
         "i18n": {
           "localized": true

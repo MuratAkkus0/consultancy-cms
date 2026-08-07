@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "dashboard_pages",
+  "collectionName": "application_page_pages",
   "info": {
-    "singularName": "dashboard-page",
-    "pluralName": "dashboard-pages",
-    "displayName": "dashboard-page"
+    "singularName": "application-page",
+    "pluralName": "application-pages",
+    "displayName": "application-page"
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +23,7 @@
         }
       }
     },
-    "welcome": {
+    "description": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -31,36 +31,40 @@
         }
       }
     },
-    "sidebar": {
+    "filters": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.sidebar",
+      "component": "dashboard-page.pages-applications-filters",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "routes": {
+    "statuses": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.routes",
+      "component": "dashboard-page.pages-applications-statuses",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "quickTip": {
-      "type": "string",
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-applications-card",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "quickTipText": {
-      "type": "string",
+    "empty": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-applications-empty",
       "pluginOptions": {
         "i18n": {
           "localized": true

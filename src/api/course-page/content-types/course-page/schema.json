@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "dashboard_pages",
+  "collectionName": "course_page_pages",
   "info": {
-    "singularName": "dashboard-page",
-    "pluralName": "dashboard-pages",
-    "displayName": "dashboard-page"
+    "singularName": "course-page",
+    "pluralName": "course-pages",
+    "displayName": "course-page"
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +23,7 @@
         }
       }
     },
-    "welcome": {
+    "description": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -31,35 +31,27 @@
         }
       }
     },
-    "sidebar": {
+    "statuses": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.sidebar",
+      "component": "dashboard-page.pages-courses-statuses",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "routes": {
+    "card": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.routes",
+      "component": "dashboard-page.pages-courses-card",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "quickTip": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "quickTipText": {
+    "empty": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_profile_page_status",
+  "info": {
+    "displayName": "Profile / Status",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "active": {
+      "type": "string"
+    },
+    "inactive": {
+      "type": "string"
+    },
+    "suspended": {
+      "type": "string"
+    }
+  }
+}

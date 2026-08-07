@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_profile_page_buttons",
+  "info": {
+    "displayName": "Profile / Buttons",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "add": {
+      "type": "string"
+    },
+    "save": {
+      "type": "string"
+    },
+    "change": {
+      "type": "string"
+    },
+    "downloadPdf": {
+      "type": "string"
+    },
+    "saving": {
+      "type": "string"
+    }
+  }
+}

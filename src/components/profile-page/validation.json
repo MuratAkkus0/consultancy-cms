@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_profile_page_validation",
+  "info": {
+    "displayName": "Profile / Validation",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "fieldRequired": {
+      "type": "string"
+    },
+    "invalidValue": {
+      "type": "string"
+    },
+    "invalidUrl": {
+      "type": "string"
+    },
+    "saveFailed": {
+      "type": "string"
+    },
+    "entryNumber": {
+      "type": "string"
+    },
+    "selectOption": {
+      "type": "string"
+    },
+    "saveSuccess": {
+      "type": "string"
+    },
+    "pdfError": {
+      "type": "string"
+    },
+    "pdfUnknownError": {
+      "type": "string"
+    },
+    "photoSizeError": {
+      "type": "string"
+    }
+  }
+}

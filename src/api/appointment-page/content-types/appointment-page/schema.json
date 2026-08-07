@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "dashboard_pages",
+  "collectionName": "appointment_page_pages",
   "info": {
-    "singularName": "dashboard-page",
-    "pluralName": "dashboard-pages",
-    "displayName": "dashboard-page"
+    "singularName": "appointment-page",
+    "pluralName": "appointment-pages",
+    "displayName": "appointment-page"
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +23,7 @@
         }
       }
     },
-    "welcome": {
+    "description": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -31,35 +31,57 @@
         }
       }
     },
-    "sidebar": {
+    "filters": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.sidebar",
+      "component": "dashboard-page.pages-appointments-filters",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "routes": {
+    "types": {
       "type": "component",
       "repeatable": false,
-      "component": "dashboard-page.routes",
+      "component": "dashboard-page.pages-appointments-types",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "quickTip": {
-      "type": "string",
+    "locations": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-locations",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "quickTipText": {
+    "empty": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-empty",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-appointments-actions",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "note": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

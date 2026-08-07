@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_profile_page_placeholders",
+  "info": {
+    "displayName": "Profile / Placeholders",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "summary": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "school": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "gpa": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "responsibilities": {
+      "type": "string"
+    },
+    "languageName": {
+      "type": "string"
+    },
+    "certificateName": {
+      "type": "string"
+    },
+    "scoreDate": {
+      "type": "string"
+    },
+    "skillName": {
+      "type": "string"
+    },
+    "referenceName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "dashboard_pages",
+  "collectionName": "advisor_appointments_page_pages",
   "info": {
-    "singularName": "dashboard-page",
-    "pluralName": "dashboard-pages",
-    "displayName": "dashboard-page"
+    "singularName": "advisor-appointments-page",
+    "pluralName": "advisor-appointments-pages",
+    "displayName": "advisor-appointments-page"
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +23,7 @@
         }
       }
     },
-    "welcome": {
+    "description": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -31,27 +31,7 @@
         }
       }
     },
-    "sidebar": {
-      "type": "component",
-      "repeatable": false,
-      "component": "dashboard-page.sidebar",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "routes": {
-      "type": "component",
-      "repeatable": false,
-      "component": "dashboard-page.routes",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "quickTip": {
+    "filterAll": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -59,7 +39,15 @@
         }
       }
     },
-    "quickTipText": {
+    "noAppointments": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "withStudent": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

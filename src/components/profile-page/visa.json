@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_profile_page_visa",
+  "info": {
+    "displayName": "Profile / Visa",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "greenPassport": {
+      "type": "string"
+    },
+    "appliedBefore": {
+      "type": "string"
+    },
+    "currentlyInProcess": {
+      "type": "string"
+    },
+    "history": {
+      "type": "string"
+    },
+    "passportValidity": {
+      "type": "string"
+    },
+    "schengenEntry": {
+      "type": "string"
+    },
+    "lastSchengenEntryDate": {
+      "type": "string"
+    },
+    "schengen90DaysUsed": {
+      "type": "string"
+    },
+    "previousAbroadExperience": {
+      "type": "string"
+    },
+    "visaRejectionReason": {
+      "type": "string"
+    }
+  }
+}

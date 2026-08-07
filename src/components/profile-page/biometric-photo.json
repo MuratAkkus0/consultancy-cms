@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_profile_page_biometric_photo",
+  "info": {
+    "displayName": "Profile / Biometric Photo",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "noPhoto": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "specs": {
+      "type": "string"
+    },
+    "change": {
+      "type": "string"
+    },
+    "sizeError": {
+      "type": "string"
+    }
+  }
+}

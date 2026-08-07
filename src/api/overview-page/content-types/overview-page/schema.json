@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "overview_pages",
+  "info": {
+    "singularName": "overview-page",
+    "pluralName": "overview-pages",
+    "displayName": "overview-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "advisor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-overview-advisor",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

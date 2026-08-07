@@ -1,0 +1,175 @@
+{
+  "kind": "singleType",
+  "collectionName": "profile_pages",
+  "info": {
+    "singularName": "profile-page",
+    "pluralName": "profile-pages",
+    "displayName": "profile-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.tabs",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "placeholders": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.placeholders",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "options": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.options",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.buttons",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "biometricPhoto": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.biometric-photo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cv": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.cv",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "account": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.account",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "status": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.status",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "target": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.target",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "targetProgram": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.target-program",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "visa": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.visa",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "validation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.validation",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.sections",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "fields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "profile-page.fields",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

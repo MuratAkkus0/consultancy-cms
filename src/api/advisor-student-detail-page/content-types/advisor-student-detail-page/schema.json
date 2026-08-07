@@ -1,0 +1,239 @@
+{
+  "kind": "singleType",
+  "collectionName": "advisor_student_detail_page_pages",
+  "info": {
+    "singularName": "advisor-student-detail-page",
+    "pluralName": "advisor-student-detail-pages",
+    "displayName": "advisor-student-detail-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "notFound": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "empty": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-empty",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "upcomingInterview": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-tabs",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "documentName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "documentCategory": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "documentDate": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "documentStatus": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "paymentDescription": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "paymentAmount": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "paymentDate": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "paymentStatus": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-sections",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "fields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-fields",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "statusLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-status-labels",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "docStatusLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-doc-status-labels",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "translationStatus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-translation-status",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-actions",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-notes",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "paymentCategories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-payment-categories",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "paymentStatuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-payment-statuses",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "booleans": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-booleans",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tableHeaders": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-table-headers",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "appointmentStatuses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dashboard-page.pages-advisor-student-detail-appointment-statuses",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

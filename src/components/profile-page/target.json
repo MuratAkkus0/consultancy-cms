@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_profile_page_target",
+  "info": {
+    "displayName": "Profile / Target",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "preferredStartDate": {
+      "type": "string"
+    },
+    "financeSource": {
+      "type": "string"
+    },
+    "budgetRange": {
+      "type": "string"
+    }
+  }
+}

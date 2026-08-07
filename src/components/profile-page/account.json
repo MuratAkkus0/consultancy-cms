@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_profile_page_account",
+  "info": {
+    "displayName": "Profile / Account",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "emailVerified": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "memberSince": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "dataProcessing": {
+      "type": "string"
+    },
+    "dataProcessingApproved": {
+      "type": "string"
+    }
+  }
+}

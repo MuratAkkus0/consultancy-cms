@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_profile_page_target_program",
+  "info": {
+    "displayName": "Profile / Target Program",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "program": {
+      "type": "string"
+    },
+    "university": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "string"
+    },
+    "intakeTerm": {
+      "type": "string"
+    }
+  }
+}

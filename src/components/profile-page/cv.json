@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_profile_page_cv",
+  "info": {
+    "displayName": "Profile / CV",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "contact": {
+      "type": "string"
+    },
+    "personalInfo": {
+      "type": "string"
+    },
+    "birth": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "maritalStatus": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "certificates": {
+      "type": "string"
+    },
+    "ongoing": {
+      "type": "string"
+    }
+  }
+}

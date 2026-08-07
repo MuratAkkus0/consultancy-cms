@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_profile_page_sections",
+  "info": {
+    "displayName": "Profile / Sections",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "personal": {
+      "type": "string"
+    },
+    "visa": {
+      "type": "string"
+    },
+    "targetPrograms": {
+      "type": "string"
+    },
+    "personalInfo": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "string"
+    },
+    "certificates": {
+      "type": "string"
+    },
+    "references": {
+      "type": "string"
+    }
+  }
+}

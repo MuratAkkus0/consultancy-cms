@@ -8,9 +8,14 @@ files:
 file_exists_behavior: OVERWRITE
 
 hooks:
+  BeforeInstall:
+    - location: deploy/before-install.sh
+      timeout: 60
+      runas: root
+
   AfterInstall:
     - location: deploy/after-install.sh
-      timeout: 300
+      timeout: 1200
       runas: root
 
   ApplicationStart:
@@ -20,5 +25,5 @@ hooks:
 
   ValidateService:
     - location: deploy/validate-service.sh
-      timeout: 60
+      timeout: 180
       runas: root

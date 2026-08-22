@@ -8,6 +8,9 @@ cd "$APP_DIR"
 
 npm ci --omit=dev
 
+# Bundle'da bos klasor kaybolursa Strapi upload plugin'i acilmaz.
+mkdir -p "$APP_DIR/public/uploads"
+
 chown -R admin:admin "$APP_DIR"
 
 install \

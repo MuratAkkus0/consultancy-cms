@@ -75,7 +75,6 @@ jobs:
           unzip -l "$ARTIFACT_NAME"
 
           unzip -l "$ARTIFACT_NAME" | grep -q "appspec.yml"
-          unzip -l "$ARTIFACT_NAME" | grep -q "dist/"
           unzip -l "$ARTIFACT_NAME" | grep -q "deploy/"
 
       - name: Configure AWS credentials

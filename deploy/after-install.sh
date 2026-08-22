@@ -4,11 +4,11 @@ set -euo pipefail
 APP_DIR="/home/admin/consultancy-cms"
 SERVICE_NAME="milestonegermany-cms.service"
 
-chown -R admin:admin "$APP_DIR"
-
 cd "$APP_DIR"
 
 npm ci --omit=dev
+
+chown -R admin:admin "$APP_DIR"
 
 install \
   -m 0644 \

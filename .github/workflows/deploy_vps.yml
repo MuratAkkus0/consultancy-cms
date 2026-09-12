@@ -1,0 +1,146 @@
+name: Deploy CMS to VPS
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch, tag or commit SHA to deploy"
+        required: false
+        default: main
+
+# Never let two deploys touch the release directory at the same time.
+# cancel-in-progress stays false: killing a deploy mid-flight can leave the
+# symlink pointing at a half-installed release.
+concurrency:
+  group: deploy-vps-cms
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.ref }}
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Create release bundle
+        run: |
+          set -euo pipefail
+          BUNDLE=bundle
+
+          rm -rf "$BUNDLE"
+          mkdir -p "$BUNDLE"
+
+          # 'strapi build' compiles config/ and src/ into dist/ and puts the admin
+          # panel in dist/build. That compiled tree is the project root at runtime.
+          cp -R dist/. "$BUNDLE/"
+          cp -R public "$BUNDLE/public"
+          cp package.json package-lock.json "$BUNDLE/"
+
+          # Media is served from shared/uploads on the server; shipping the
+          # repo's placeholder directory would only get replaced by a symlink.
+          rm -rf "$BUNDLE/public/uploads"
+
+          test -d "$BUNDLE/config"
+          test -d "$BUNDLE/src"
+          test -d "$BUNDLE/build"
+          test -f "$BUNDLE/package-lock.json"
+
+          tar czf release.tgz -C "$BUNDLE" .
+          ls -lh release.tgz
+
+      - name: Configure SSH
+        env:
+          SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_PORT: ${{ vars.VPS_PORT }}
+          VPS_USER: ${{ vars.VPS_USER }}
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+
+          # umask before the write: the key must never exist as world-readable,
+          # not even for the instant between creating and chmod-ing it.
+          (umask 077; printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key)
+
+          # Fail here with a readable message instead of a bare
+          # "error in libcrypto" three steps later. The header lines and the
+          # line count are not secret, so they are safe to print.
+          if ! ssh-keygen -y -P "" -f ~/.ssh/deploy_key > /dev/null 2>&1; then
+            echo "VPS_SSH_KEY is not a usable private key." >&2
+            echo "  lines:      $(wc -l < ~/.ssh/deploy_key)" >&2
+            echo "  first line: $(head -1 ~/.ssh/deploy_key)" >&2
+            echo "  last line:  $(tail -1 ~/.ssh/deploy_key)" >&2
+            echo "Expected BEGIN/END markers and the original line breaks." >&2
+            exit 1
+          fi
+
+          # One alias for every later step. ssh takes -p for the port but scp
+          # takes -P, so a shared options string silently breaks one of them.
+          (umask 077; cat > ~/.ssh/config <<EOF
+          Host vps
+            HostName $VPS_HOST
+            Port $VPS_PORT
+            User $VPS_USER
+            IdentityFile ~/.ssh/deploy_key
+            IdentitiesOnly yes
+            StrictHostKeyChecking yes
+          EOF
+          )
+
+          ssh-keyscan -p "$VPS_PORT" -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          test -s ~/.ssh/known_hosts || { echo "ssh-keyscan returned nothing" >&2; exit 1; }
+
+          ssh vps 'echo "ssh reachable as $(whoami)"'
+
+      - name: Upload environment file
+        env:
+          ENV_FILE: ${{ secrets.VPS_ENV_FILE }}
+          APP_ROOT: ${{ vars.VPS_APP_ROOT }}
+        run: |
+          set -euo pipefail
+          test -n "$ENV_FILE" || { echo "VPS_ENV_FILE secret is empty" >&2; exit 1; }
+          # Piped through stdin so the value never appears in a command line,
+          # where 'ps' on the runner would expose it.
+          printf '%s\n' "$ENV_FILE" | ssh vps \
+            "umask 077 && cat > '$APP_ROOT/shared/.env' && chmod 640 '$APP_ROOT/shared/.env'"
+
+      - name: Upload release bundle
+        env:
+          APP_ROOT: ${{ vars.VPS_APP_ROOT }}
+          SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          scp release.tgz "vps:/tmp/release-$SHA.tgz"
+          ssh vps "
+            set -euo pipefail
+            mkdir -p '$APP_ROOT/releases/$SHA'
+            tar xzf '/tmp/release-$SHA.tgz' -C '$APP_ROOT/releases/$SHA'
+            rm -f '/tmp/release-$SHA.tgz'
+          "
+
+      - name: Activate release
+        env:
+          SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          # 'bash -s' streams the script from this repo, so the server never
+          # holds a stale copy of it.
+          ssh vps 'bash -s' -- "$SHA" < deploy/remote-release.sh
+
+      - name: Remove SSH credentials
+        if: always()
+        run: rm -f ~/.ssh/deploy_key ~/.ssh/config

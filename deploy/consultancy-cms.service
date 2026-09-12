@@ -1,0 +1,37 @@
+# /etc/systemd/system/consultancy-cms.service
+[Unit]
+Description=Consultancy CMS (Strapi)
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+# Give up after 5 failed starts in a minute instead of restarting forever.
+# RestartSec=5 means the default 10s window never fills, so it is widened here.
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+
+User=deploycms
+Group=deploycms
+WorkingDirectory=/srv/consultancy-cms/current
+EnvironmentFile=/srv/consultancy-cms/shared/.env
+
+# EnvironmentFile= always wins over Environment=, whatever the order, so HOST
+# and PORT belong in the env file. remote-release.sh refuses to deploy an env
+# file that would bind the CMS to a public interface.
+Environment=NODE_ENV=production
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+
+# Calling the CLI directly instead of 'npm start' keeps systemd's signals on
+# the actual Strapi process rather than on an npm wrapper.
+ExecStart=/usr/bin/node /srv/consultancy-cms/current/node_modules/@strapi/strapi/bin/strapi.js start
+
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

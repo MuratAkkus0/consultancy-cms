@@ -57,10 +57,12 @@ if [ ! -f "$SHARED_DIR/.env" ]; then
   exit 1
 fi
 
-if [ ! -d "$SHARED_DIR/uploads" ]; then
-  echo "uploads directory not found in $SHARED_DIR" >&2
-  exit 1
-fi
+for d in uploads database-migrations home; do
+  if [ ! -d "$SHARED_DIR/$d" ]; then
+    echo "$d directory not found in $SHARED_DIR" >&2
+    exit 1
+  fi
+done
 
 # systemd's EnvironmentFile always beats the unit's Environment= lines, so the
 # env file is the only thing deciding which interface Strapi binds to. Refuse an
@@ -79,6 +81,14 @@ npm ci --omit=dev
 rm -rf "$RELEASE_DIR/public/uploads"
 ln -sfn "$SHARED_DIR/uploads" "$RELEASE_DIR/public/uploads"
 echo "Uploads linked into release dir."
+
+# Strapi creates database/migrations on boot and writes migration records there.
+# That is state, not code: it must outlive the release and be writable by the
+# service, which the release tree deliberately is not.
+mkdir -p "$RELEASE_DIR/database"
+rm -rf "$RELEASE_DIR/database/migrations"
+ln -sfn "$SHARED_DIR/database-migrations" "$RELEASE_DIR/database/migrations"
+echo "Migrations directory linked into release dir."
 
 ln -sfn "$RELEASE_DIR" "$CURRENT_LINK"
 echo "Current version link updated."

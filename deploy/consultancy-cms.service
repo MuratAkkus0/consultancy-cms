@@ -21,6 +21,9 @@ EnvironmentFile=/srv/consultancy-cms/shared/.env
 # and PORT belong in the env file. remote-release.sh refuses to deploy an env
 # file that would bind the CMS to a public interface.
 Environment=NODE_ENV=production
+# Strapi's CLI writes into $HOME on boot; the account's own home is the release
+# tree, which the service must not be able to modify.
+Environment=HOME=/srv/consultancy-cms/shared/home
 
 NoNewPrivileges=true
 PrivateTmp=true
